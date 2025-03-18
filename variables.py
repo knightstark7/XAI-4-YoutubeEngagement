@@ -1,0 +1,13 @@
+TRAIN_VIDEOS_PATH = "/mnt/d/Thesis/Data/Video/Train"
+TEST_VIDEOS_PATH = "/mnt/d/Thesis/Data/Video/Test"
+TO_PATH = "/mnt/d/Thesis/Prep"
+
+
+VIDEO_FPS = 5
+AUDIO_FPS = 8000
+MAX_SECONDS = 60
+TARGET_FRAME_SIZE = (128, 64) # original is about (840, 480)
+TARGET_N_FRAME = MAX_SECONDS * VIDEO_FPS
+TARGET_AUDIO_LENGTH = MAX_SECONDS * AUDIO_FPS
+
+SUB_FRACTION = 0.1 
