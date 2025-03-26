@@ -1,0 +1,46 @@
+{
+  "text": " Barret was smashed like a bowl of eggs, and the mean truck carried off both me legs. Goddamn them all!",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.0,
+      "end": 7.0,
+      "text": " Barret was smashed like a bowl of eggs, and the mean truck carried off both me legs. Goddamn them all!",
+      "tokens": [
+        50364,
+        4156,
+        1505,
+        390,
+        33269,
+        411,
+        257,
+        6571,
+        295,
+        6466,
+        11,
+        293,
+        264,
+        914,
+        5898,
+        9094,
+        766,
+        1293,
+        385,
+        5668,
+        13,
+        1265,
+        25324,
+        552,
+        439,
+        0,
+        50714
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5442901338849749,
+      "compression_ratio": 1.146067415730337,
+      "no_speech_prob": 0.12661606073379517
+    }
+  ],
+  "language": "en"
+}

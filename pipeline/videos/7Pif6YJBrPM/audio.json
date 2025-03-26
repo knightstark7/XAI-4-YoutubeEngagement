@@ -1,0 +1,45 @@
+{
+  "text": " What country is the banner from? Norway.",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.0,
+      "end": 5.0,
+      "text": " What country is the banner from?",
+      "tokens": [
+        50364,
+        708,
+        1941,
+        307,
+        264,
+        24348,
+        490,
+        30,
+        50614
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.6634204047066825,
+      "compression_ratio": 0.8333333333333334,
+      "no_speech_prob": 0.09625554084777832
+    },
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 5.0,
+      "end": 8.0,
+      "text": " Norway.",
+      "tokens": [
+        50614,
+        24354,
+        13,
+        50764
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.6634204047066825,
+      "compression_ratio": 0.8333333333333334,
+      "no_speech_prob": 0.09625554084777832
+    }
+  ],
+  "language": "en"
+}

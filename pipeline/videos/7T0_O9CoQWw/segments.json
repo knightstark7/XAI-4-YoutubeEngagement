@@ -1,0 +1,22 @@
+[
+  {
+    "start": [
+      0.0,
+      2.0,
+      5.0,
+      7.0
+    ],
+    "end": [
+      2.0,
+      5.0,
+      7.0,
+      8.88
+    ],
+    "text": [
+      " Now this is pod racing!",
+      " No, no, this isn't pod racing, that was on Tatooine.",
+      " You're in a spaceship now- oh wait.",
+      " Oh, oh, he was doing like a thing."
+    ]
+  }
+]

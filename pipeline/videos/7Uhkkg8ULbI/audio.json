@@ -1,0 +1,84 @@
+{
+  "text": " Can't use Thunderbolt, it's a ground Pokemon, some types are resistant against other ty- Use Thunderbolt, it's awesome! Fuckin' good.",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.0,
+      "end": 4.1,
+      "text": " Can't use Thunderbolt, it's a ground Pokemon, some types are resistant against other ty-",
+      "tokens": [
+        50364,
+        1664,
+        380,
+        764,
+        21023,
+        39477,
+        11,
+        309,
+        311,
+        257,
+        2727,
+        13796,
+        11,
+        512,
+        3467,
+        366,
+        20383,
+        1970,
+        661,
+        1104,
+        12,
+        50569
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.41371307373046873,
+      "compression_ratio": 1.2666666666666666,
+      "no_speech_prob": 0.058185555040836334
+    },
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 4.1,
+      "end": 5.6000000000000005,
+      "text": " Use Thunderbolt, it's awesome!",
+      "tokens": [
+        50569,
+        8278,
+        21023,
+        39477,
+        11,
+        309,
+        311,
+        3476,
+        0,
+        50644
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.41371307373046873,
+      "compression_ratio": 1.2666666666666666,
+      "no_speech_prob": 0.058185555040836334
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 5.6000000000000005,
+      "end": 6.5,
+      "text": " Fuckin' good.",
+      "tokens": [
+        50644,
+        10965,
+        259,
+        6,
+        665,
+        13,
+        50689
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.41371307373046873,
+      "compression_ratio": 1.2666666666666666,
+      "no_speech_prob": 0.058185555040836334
+    }
+  ],
+  "language": "en"
+}

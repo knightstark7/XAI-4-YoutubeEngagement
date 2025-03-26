@@ -1,0 +1,110 @@
+{
+  "text": " Now this is pod racing! No, no, this isn't pod racing, that was on Tatooine. You're in a spaceship now- oh wait. Oh, oh, he was doing like a thing.",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.0,
+      "end": 2.0,
+      "text": " Now this is pod racing!",
+      "tokens": [
+        50364,
+        823,
+        341,
+        307,
+        2497,
+        12553,
+        0,
+        50464
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4050558198173091,
+      "compression_ratio": 1.2894736842105263,
+      "no_speech_prob": 0.0859469622373581
+    },
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 2.0,
+      "end": 5.0,
+      "text": " No, no, this isn't pod racing, that was on Tatooine.",
+      "tokens": [
+        50464,
+        883,
+        11,
+        572,
+        11,
+        341,
+        1943,
+        380,
+        2497,
+        12553,
+        11,
+        300,
+        390,
+        322,
+        19645,
+        1986,
+        533,
+        13,
+        50614
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4050558198173091,
+      "compression_ratio": 1.2894736842105263,
+      "no_speech_prob": 0.0859469622373581
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 5.0,
+      "end": 7.0,
+      "text": " You're in a spaceship now- oh wait.",
+      "tokens": [
+        50614,
+        509,
+        434,
+        294,
+        257,
+        39185,
+        586,
+        12,
+        1954,
+        1699,
+        13,
+        50714
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4050558198173091,
+      "compression_ratio": 1.2894736842105263,
+      "no_speech_prob": 0.0859469622373581
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 7.0,
+      "end": 9.0,
+      "text": " Oh, oh, he was doing like a thing.",
+      "tokens": [
+        50714,
+        876,
+        11,
+        1954,
+        11,
+        415,
+        390,
+        884,
+        411,
+        257,
+        551,
+        13,
+        50814
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4050558198173091,
+      "compression_ratio": 1.2894736842105263,
+      "no_speech_prob": 0.0859469622373581
+    }
+  ],
+  "language": "en"
+}

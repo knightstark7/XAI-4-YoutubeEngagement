@@ -1,0 +1,126 @@
+{
+  "text": " You what mate? Fingers. You what mate? I get nappy. What's a nappy? Mate, what's a nappy?",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.0,
+      "end": 5.68,
+      "text": " You what mate?",
+      "tokens": [
+        50364,
+        509,
+        437,
+        11709,
+        30,
+        50648
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4924095065094704,
+      "compression_ratio": 1.3484848484848484,
+      "no_speech_prob": 0.07251463085412979
+    },
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 5.68,
+      "end": 6.72,
+      "text": " Fingers.",
+      "tokens": [
+        50648,
+        479,
+        40180,
+        13,
+        50700
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4924095065094704,
+      "compression_ratio": 1.3484848484848484,
+      "no_speech_prob": 0.07251463085412979
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 6.72,
+      "end": 12.56,
+      "text": " You what mate?",
+      "tokens": [
+        50700,
+        509,
+        437,
+        11709,
+        30,
+        50992
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4924095065094704,
+      "compression_ratio": 1.3484848484848484,
+      "no_speech_prob": 0.07251463085412979
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 12.56,
+      "end": 13.68,
+      "text": " I get nappy.",
+      "tokens": [
+        50992,
+        286,
+        483,
+        1667,
+        7966,
+        13,
+        51048
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4924095065094704,
+      "compression_ratio": 1.3484848484848484,
+      "no_speech_prob": 0.07251463085412979
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 13.68,
+      "end": 14.88,
+      "text": " What's a nappy?",
+      "tokens": [
+        51048,
+        708,
+        311,
+        257,
+        1667,
+        7966,
+        30,
+        51108
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4924095065094704,
+      "compression_ratio": 1.3484848484848484,
+      "no_speech_prob": 0.07251463085412979
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 14.88,
+      "end": 16.88,
+      "text": " Mate, what's a nappy?",
+      "tokens": [
+        51108,
+        27594,
+        11,
+        437,
+        311,
+        257,
+        1667,
+        7966,
+        30,
+        51208
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4924095065094704,
+      "compression_ratio": 1.3484848484848484,
+      "no_speech_prob": 0.07251463085412979
+    }
+  ],
+  "language": "en"
+}

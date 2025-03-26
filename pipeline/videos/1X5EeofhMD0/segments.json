@@ -1,0 +1,49 @@
+[
+  {
+    "start": [
+      0.0,
+      4.0
+    ],
+    "end": [
+      4.0,
+      6.0
+    ],
+    "text": [
+      " That will be mine one day.",
+      " What is it?"
+    ]
+  },
+  {
+    "start": [
+      6.07
+    ],
+    "end": [
+      8.0
+    ],
+    "text": [
+      " I'm pretty sure it's a Lambo, dude."
+    ]
+  },
+  {
+    "start": [
+      8.07
+    ],
+    "end": [
+      11.0
+    ],
+    "text": [
+      " Oh, oh, he wrecked, oh!"
+    ]
+  },
+  {
+    "start": [
+      11.03
+    ],
+    "end": [
+      17.67
+    ],
+    "text": [
+      ""
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+name: pipeline
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - pip:
+    - openai-whisper==20230314
+    - yt_dlp==2023.3.4
+    - transformers==4.11.2
+    - opencv-python
+    - pandas
+    - openai
+    - sentence_transformers
+    - ffmpeg-python==0.2.0
+    - pandas
+    - pillow
+    - transformers
+    - torch
+    - torchvision

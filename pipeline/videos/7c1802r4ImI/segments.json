@@ -1,0 +1,66 @@
+[
+  {
+    "start": [
+      0.0
+    ],
+    "end": [
+      2.34
+    ],
+    "text": [
+      " Medium pulp orange juice. Let's see how that works out."
+    ]
+  },
+  {
+    "start": [
+      2.34,
+      4.4
+    ],
+    "end": [
+      4.4,
+      6.6
+    ],
+    "text": [
+      "",
+      " Ooh, that's nice. That's really nice."
+    ]
+  },
+  {
+    "start": [
+      6.71
+    ],
+    "end": [
+      8.11
+    ],
+    "text": [
+      " Medium pulp is for suckers. I drink mega pulp."
+    ]
+  },
+  {
+    "start": [
+      8.11
+    ],
+    "end": [
+      9.81
+    ],
+    "text": [
+      ""
+    ]
+  },
+  {
+    "start": [
+      9.81,
+      12.8,
+      13.8
+    ],
+    "end": [
+      12.8,
+      13.8,
+      14.3
+    ],
+    "text": [
+      " I'm gonna pour it out of the glass. This is mega pulp juice.",
+      "",
+      " Oh."
+    ]
+  }
+]
