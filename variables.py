@@ -1,13 +1,11 @@
-TRAIN_VIDEOS_PATH = "/mnt/d/Thesis/Data/Video/Train"
-TEST_VIDEOS_PATH = "/mnt/d/Thesis/Data/Video/Test"
-TO_PATH = "/mnt/d/Thesis/Prep"
-
+DOWNLOAD_PATH = "/mnt/d/Thesis/Data/SnapUGC"
+SCENE_PATH = "/mnt/d/Thesis/Prep/SnapUGC/scenes"
 
 VIDEO_FPS = 5
 AUDIO_FPS = 16000
 MAX_SECONDS = 30
-TARGET_FRAME_SIZE = (224, 128) # original is about (840, 480)
+TARGET_FRAME_SIZE = (224, 224) # original is about (840, 480)
 TARGET_N_FRAME = MAX_SECONDS * VIDEO_FPS
 TARGET_AUDIO_LENGTH = MAX_SECONDS * AUDIO_FPS
 
-SUB_FRACTION = 0.3
+SUB_FRACTION = 0.1
