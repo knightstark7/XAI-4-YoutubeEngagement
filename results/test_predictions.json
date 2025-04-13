@@ -1,0 +1,153 @@
+{
+    "predictions": [
+        {
+            "sample": 0,
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": false
+        },
+        {
+            "sample": 1,
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 2,
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 3,
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": false
+        },
+        {
+            "sample": 4,
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 5,
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 6,
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 7,
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 8,
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 9,
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 10,
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 11,
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        }
+    ],
+    "summary": {
+        "accuracy": 0.8333333333333334,
+        "correct_count": 10,
+        "total_samples": 12
+    }
+}

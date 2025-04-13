@@ -1,0 +1,15 @@
+Sample,Predicted (Numeric),Predicted (Text),Actual (Numeric),Actual (Text),Is Correct
+0,1,engaging,0,not_engaging,False
+1,0,not_engaging,0,not_engaging,True
+2,0,not_engaging,0,not_engaging,True
+3,1,engaging,0,not_engaging,False
+4,0,not_engaging,0,not_engaging,True
+5,0,not_engaging,0,not_engaging,True
+6,0,not_engaging,0,not_engaging,True
+7,0,not_engaging,0,not_engaging,True
+8,1,engaging,1,engaging,True
+9,1,engaging,1,engaging,True
+10,1,engaging,1,engaging,True
+11,1,engaging,1,engaging,True
+""
+Summary:,Accuracy: 0.8333,Correct: 10/12

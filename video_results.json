@@ -1,0 +1,1094 @@
+{
+  "04c8cd68da150df99d859ca25956fe0f": {
+    "label": "engaging",
+    "concepts": [
+      "Exciting sports action",
+      "High-energy music",
+      "Call to action",
+      "Competitive score display",
+      "Close-up shots",
+      "Interactive engagement prompts",
+      "Fast-paced visuals",
+      "Emotional intensity",
+      "Relatable content",
+      "Visual focus on key moments"
+    ],
+    "content": "Scene 1 - Visual: a video of a soccer game being played on the tv\nScene 1 - OCR Text: 3-2 what a game\nSpeech:  Don't forget to like, comment, and subscribe!\nScene 2 - Visual: a tv showing a very close shot of a man playing a game\nScene 2 - OCR Text: 3-2 what a game\n",
+    "audio_tags": "Music, Electronic dance music, Electronic music"
+  },
+  "0c38722311df0412921f683d18354044": {
+    "label": "not_engaging",
+    "concepts": [
+      "Lack of dynamic action",
+      "Minimal visual interest",
+      "Predictable scenario",
+      "No dialogue or interaction",
+      "Overused meme format",
+      "Absence of narrative depth",
+      "Generic background music",
+      "Limited emotional engagement",
+      "Static camera angle",
+      "Short duration without impact"
+    ],
+    "content": "Scene 1 - Visual: a person walking away from a fridge in a kitchen\nScene 1 - OCR Text: Me walking away after hearing something fall in the fridge:\n",
+    "audio_tags": "Music"
+  },
+  "0d2019cbdb9c2f1bc6ef005fd0a23229": {
+    "label": "not_engaging",
+    "concepts": [
+      "Lack of narrative structure",
+      "Minimal visual variety",
+      "Overused music genre",
+      "Generic motivational text",
+      "Absence of dialogue",
+      "Repetitive visual focus",
+      "No emotional connection",
+      "Predictable content theme",
+      "Lack of originality",
+      "Limited audience appeal"
+    ],
+    "content": "Scene 1 - Visual: a woman with a gray tank top showing off her toned butt\nScene 1 - OCR Text: Just me all me, Mind Yours. Love Me Lil Wayne\nSpeech:  Ã°Å¸Å½Â¶ Music Outro Ã°Å¸Å½Â¶\n",
+    "audio_tags": "Music, Hip hop music, Rhythm and blues"
+  },
+  "11037ab7e13410b6c0385a94e48f6bf5": {
+    "label": "not_engaging",
+    "concepts": [
+      "Blurry visuals",
+      "Lack of clear focus",
+      "Repetitive scenes",
+      "Minimal action or movement",
+      "Monotonous speech",
+      "Lack of narrative progression",
+      "Unclear subject matter",
+      "Limited visual variety",
+      "Sparse audio context",
+      "Absence of engaging elements"
+    ],
+    "content": "Scene 1 - Visual: the blurry image of an animal walking through the leaves\nScene 1 - Visual: a blurry picture of a wooded area with leaves all over it\nScene 1 - Visual: a blurry picture of a wooded area with leaves on the ground\nScene 1 - Visual: a blurry photo of a man running in a forest\nScene 1 - Visual: a forest scene that has leaves on the ground\nScene 1 - Visual: man with a hat taking picture with his cell phone\nSpeech:  I'm out here with no dogs this time.\nSpeech:  Just me by myself.\nSpeech:  Looking for a skinwalker.\nSpeech:  I've been hearing it for the under months now.\nSpeech:  In Cordova.\nSpeech:  Skinwalker.\nSpeech:  I'm out here.\nSpeech:  See what's up.\nSpeech:  Yes sir.\nSpeech:  Me by myself buddy.\nSpeech:  Stay tuned.\n",
+    "audio_tags": "Speech, Walk, footsteps, Outside, rural or natural"
+  },
+  "11eb90fcf0bfd1494b4ff2b19b6514be": {
+    "label": "not_engaging",
+    "concepts": [
+      "Repetitive lyrics",
+      "Lack of narrative progression",
+      "Overused visual tropes",
+      "Predictable content",
+      "Lack of emotional depth",
+      "Generic music choice",
+      "Absence of dynamic elements",
+      "Minimal character development",
+      "Unoriginal theme",
+      "Limited audience appeal"
+    ],
+    "content": "Scene 1 - Visual: a sexy asian woman is dressed in a camo top\nSpeech:  You ought to know by now that you want to be my lover, want to be my lover, want to be my lover.\n",
+    "audio_tags": "Music, Male singing, Speech"
+  },
+  "11f8759df3fae357a85f6024bc70f3da": {
+    "label": "engaging",
+    "concepts": [
+      "Celebrity presence",
+      "Live concert atmosphere",
+      "Audience interaction",
+      "Social media sharing",
+      "Emotional connection",
+      "Crowd energy",
+      "Personal moments captured",
+      "Popular music influence",
+      "Event documentation",
+      "Cultural relevance"
+    ],
+    "content": "Scene 1 - Visual: a girl looking up into the air at someone in the audience\nScene 1 - OCR Text: Atif Aslam vlog main kya huva tha https: / / mvoutube com /sup. Mvoutube coM\nSpeech:  अगर वो बहारे लिए आओ, तो वो बहारे लिए आओ।\nScene 2 - Visual: people standing in a crowd watching a performance at a concert\nScene 2 - OCR Text: Atif Aslam vlog main kya huva tha https: / / mvoutube com /sup.\nScene 3 - Visual: the audience is taking their pictures while the concert is being watched\nScene 3 - OCR Text: Atif Aslam vlog main kya huva tha https: / | m.voutube com/sup ..\nScene 4 - Visual: there are many people on a large stage and the image is a video of a man in the middle of the crowd\nScene 4 - OCR Text: Atif Aslam vlog main kya huva tha https: / |\nScene 5 - Visual: a girl taking a selfie in a crowded stadium\nScene 5 - OCR Text: Atif Aslam vlog main kya huva tha https: / | mvoutube com /sup. Mvoutubecom\n",
+    "audio_tags": "Music, Speech, Crowd"
+  },
+  "12340f20843697055793de2cf6658c37": {
+    "label": "engaging",
+    "concepts": [
+      "Humorous actions",
+      "Unexpected behavior",
+      "Relatable setting",
+      "Playful music",
+      "Visual comedy",
+      "Quirky instructions",
+      "Physical comedy",
+      "Lighthearted tone",
+      "Spontaneous dance",
+      "Engaging audio elements"
+    ],
+    "content": "Scene 1 - Visual: a man holding up his arm at the store\nScene 1 - OCR Text: Salel Told him to act like he's putting on deodorant and walk with his knees bent\nSpeech:  why am i outfits\nScene 2 - Visual: a man that is dancing in a store holding something\n",
+    "audio_tags": "Music, Wood block, Percussion"
+  },
+  "14cef79fee6e5d55c12c855025c0d144": {
+    "label": "not_engaging",
+    "concepts": [
+      "Lack of clear narrative",
+      "Monotonous speech delivery",
+      "Unclear visual context",
+      "Overuse of slang or jargon",
+      "Lack of emotional engagement",
+      "Repetitive or unclear dialogue",
+      "Minimal visual variety",
+      "Absence of dynamic elements",
+      "Unfocused or rambling speech",
+      "Lack of audience connection"
+    ],
+    "content": "Scene 1 - Visual: a man laying on a couch holding his head with the words firewell tour\nScene 1 - Visual: a man that is sitting in a chair with a sign on his head\nScene 1 - Visual: a man sitting on a couch with a large poster\nScene 1 - OCR Text: TheRowdy\nSpeech:  I ain't gonna cap man. Games really ain't the same now like\nSpeech:  I'm drunk times I used to shoot on that who\nSpeech:  realities and\nSpeech:  God forbid man. I had so many good memories and fast bro like\nSpeech:  Mother see me with the mohawk with brown hair when I chopped the hog off\nSpeech:  for five like they they seen everything bro now that shit closing down like this\nSpeech:  Mm-hmm. I'm supposed to be going to games voters weekend, so which is crazy, but like\nSpeech:  Nah that that that's crazy work\n",
+    "audio_tags": "Speech, Male speech, man speaking"
+  },
+  "1a1af10d0710f74273438ad7087ef8db": {
+    "label": "engaging",
+    "concepts": [
+      "Cultural elements",
+      "Personal interaction",
+      "Visual storytelling",
+      "Conversational tone",
+      "Relatable scenarios",
+      "Emotional connection",
+      "Social setting",
+      "Visual aesthetics",
+      "Multilingual dialogue",
+      "Human presence"
+    ],
+    "content": "Scene 1 - Visual: the back of a person walking through a room with a bunch of people\nSpeech:  कौ करला आगया पेरंज़िनक उननी가요राक है\nScene 2 - Visual: a person has henna on her hand at a dinner table\nSpeech:  भी किछी  geworden के धले मोड अधयें\nScene 3 - Visual: a hand with henna on it and two people holding phones\n",
+    "audio_tags": "Speech, Female speech, woman speaking, Conversation"
+  },
+  "1f3f7dfcf934e80b05ccfde67a94f8c2": {
+    "label": "engaging",
+    "concepts": [
+      "Cute animal appeal",
+      "Relatable humor",
+      "Aspirational content",
+      "Emotional connection",
+      "Conversational tone",
+      "Childlike wonder",
+      "Personal desire expression",
+      "Lighthearted mood",
+      "Engaging dialogue",
+      "Visual focus on pet"
+    ],
+    "content": "Scene 1 - Visual: a man holds a white dog on a flat screen television\nSpeech:  My future husband better buy me one of them, look how cute it is!\n",
+    "audio_tags": "Speech, Child speech, kid speaking, Female speech, woman speaking"
+  },
+  "21cdfb16bc352b1dae32da0c1fa313dc": {
+    "label": "not_engaging",
+    "concepts": [
+      "Repetitive speech content",
+      "Lack of dynamic visuals",
+      "Absence of background music",
+      "Static animation elements",
+      "No narrative progression",
+      "Redundant ingredient listing",
+      "Minimal visual variety",
+      "Lack of emotional connection",
+      "No interactive elements",
+      "Predictable visual patterns"
+    ],
+    "content": "Scene 1 - Visual: an animation of several balloons floating in the air\nScene 1 - Visual: a girl looking up from under some balloons, as if in a window\nScene 1 - Visual: a person holds a birthday bag in front of balloons\nSpeech:  100 g of butter\nSpeech:  100 g of sugar\nSpeech:  1 tsp of vanilla sugar\nSpeech:  1 tsp of baking powder\nSpeech:  1 tsp of baking soda\nSpeech:  1 tsp of baking powder\nSpeech:  1 tsp of baking soda\nSpeech:  1 tsp of vanilla sugar\n",
+    "audio_tags": "Silence"
+  },
+  "2910368bd4ba9b1c04546fbbbaee6f84": {
+    "label": "engaging",
+    "concepts": [
+      "Dynamic lighting effects",
+      "Social interaction",
+      "Party atmosphere",
+      "Music-driven energy",
+      "Visual excitement",
+      "Conversational elements",
+      "Relatable characters",
+      "Celebration theme",
+      "Vibrant colors",
+      "Engaging audio mix"
+    ],
+    "content": "Scene 1 - Visual: a woman holding a sparkler next to a dj equipment\nScene 2 - Visual: two guys standing next to each other in a club\nSpeech:  Lucas who loves to talk, and Daddy Justin。\nScene 3 - Visual: two men are holding drinks at a party with purple lights\n",
+    "audio_tags": "Music, Speech, Singing"
+  },
+  "2f70c3f7f70901787b728574e467d869": {
+    "label": "not_engaging",
+    "concepts": [
+      "Repetitive visuals",
+      "Lack of narrative",
+      "Minimal action or movement",
+      "Overused phrases",
+      "Generic hip hop music",
+      "Lack of emotional connection",
+      "Predictable content",
+      "Absence of unique elements",
+      "Limited audience appeal",
+      "Redundant posing"
+    ],
+    "content": "Scene 1 - Visual: two woman wearing tight dresses in a large house\nScene 1 - Visual: two woman in tight dress posing in a room\nScene 1 - Visual: two women posing for a video while wearing tight dresses\nScene 1 - OCR Text: He Be Like\nSpeech:  You that bitch, you that bitch\nSpeech:  Ooh, ooh, fuck\nSpeech:  Ooh, ooh, ooh\n",
+    "audio_tags": "Music, Hip hop music, Rapping"
+  },
+  "375be1c7fe6a88682bfafa55c083de6e": {
+    "label": "not_engaging",
+    "concepts": [
+      "Repetitive visual scenes",
+      "Lack of narrative progression",
+      "Minimal interaction between characters",
+      "Absence of dynamic action",
+      "Unclear context or storyline",
+      "Overuse of static poses",
+      "Limited emotional expression",
+      "Monotonous dialogue",
+      "Lack of engaging audio elements",
+      "Unresolved conflict or tension"
+    ],
+    "content": "Scene 1 - Visual: a woman in shorts doing a hand stand in a living room\nScene 1 - Visual: a woman laying on the floor while another person standing behind her\nScene 1 - Visual: a sexy woman lays on her side in a living room\nScene 1 - Visual: a woman laying on the floor in shorts and socks\nScene 1 - Visual: a sexy young woman laying on her stomach in a room\nScene 1 - Visual: a girl with her legs crossed laying on the floor\nScene 1 - OCR Text: Billy Sorry\nSpeech:  Fuck! Jesus fucking Christ!\nSpeech:  Hey! Can you keep it down?\nSpeech:  Yeah.\nSpeech:  Alright, thank you.\nSpeech:  Sorry.\n",
+    "audio_tags": "Speech, Slam, Door"
+  },
+  "3dd1eb65f3b4aef0a8ab9a59fc109dfd": {
+    "label": "not_engaging",
+    "concepts": [
+      "Lack of clear narrative",
+      "Repetitive visuals",
+      "Unclear message",
+      "Negative language",
+      "Overly simplistic content",
+      "Lack of emotional connection",
+      "Abrupt audio context",
+      "Unrelatable scenario",
+      "Limited visual variety",
+      "Absence of humor or intrigue"
+    ],
+    "content": "Scene 1 - Visual: a girl looking at her phone while she has purple hair\nScene 1 - Visual: a person with a purple wig looking at a phone\nScene 1 - OCR Text: brain when my friends text back my typos? #my\nSpeech:  Shut the fuck up!\n",
+    "audio_tags": "Screaming, Speech"
+  },
+  "404eaf447d7dd6221498ccf972c2cfa0": {
+    "label": "not_engaging",
+    "concepts": [
+      "Lack of storyline",
+      "Overemphasis on appearance",
+      "Minimal dialogue",
+      "Repetitive content",
+      "Lack of viewer interaction",
+      "Predictable visuals",
+      "Generic music",
+      "Absence of unique elements",
+      "No clear message",
+      "Limited context"
+    ],
+    "content": "Scene 1 - Visual: a very sexy girl in a short dress in her house\nSpeech:  ¡Suscríbete al canal!\n",
+    "audio_tags": "Music, Singing"
+  },
+  "414e9b3df0d7e89415b8f47641222b51": {
+    "label": "engaging",
+    "concepts": [
+      "Intriguing story hook",
+      "Conversational dialogue",
+      "Suspenseful narrative",
+      "Relatable reactions",
+      "Humor elements",
+      "Mystery and curiosity",
+      "Surprising revelations",
+      "Engaging storytelling",
+      "Interactive questioning",
+      "Casual tone"
+    ],
+    "content": "Scene 1 - Visual: a young man holding a microphone and a helmet, with the words $ 21 million stolen on it\nScene 1 - OCR Text: {122 MILLION STOLEN\nSpeech:  Did you not see here, the guy that stole 122 million from Facebook and Google?\nScene 2 - Visual: a man sits in front of a microphone with the caption $ 72 million stolen\nScene 2 - OCR Text: {122 MILLION STOLEN\nSpeech:  Hmm? How?\nScene 3 - Visual: a man speaking into a microphone with the word $ 12 million stolen\nScene 3 - OCR Text: {122 MILLION STOLEN\nSpeech:  Just take a guess how he stole it.\nScene 4 - Visual: a guy on a couch wearing headphones and the words $ 1, 925 million stolen\nScene 4 - OCR Text: {122 MILLION STOLEN\nSpeech:  How did he steal 120M? That's a lot of money.\nSpeech:  From Google and Facebook.\nSpeech:  Did it say the period of time that he stole it over?\nScene 5 - OCR Text: {122 MILLION STOLEN\nSpeech:  He stole it over...\nScene 6 - OCR Text: {122 MILLION STOLEN\nSpeech:  He set up a fake business?\nScene 7 - OCR Text: {122 MILLION STOLEN\nSpeech:  He didn't do that, but close. He stole it from 2013 to 2015, so two years.\nScene 8 - OCR Text: {122 MILLION STOLEN\nSpeech:  He set up a fake account?\nScene 9 - OCR Text: {122 MILLION STOLEN\nSpeech:  I'll tell you what he did.\nScene 10 - OCR Text: {122 MILLION STOLEN\nSpeech:  Man was sending invoices for jobs that they've never done.\nScene 11 - OCR Text: {122 MILLION STOLEN\nScene 12 - OCR Text: {122 MILLION STOLEN\nSpeech:  What?\nScene 13 - OCR Text: {122 MILLION STOLEN\nSpeech:  And they just paid it.\nScene 14 - OCR Text: {122 MILLION STOLEN\nScene 15 - OCR Text: {122 MILLION STOLEN\nSpeech:  My God.\nScene 16 - OCR Text: {122 MILLION STOLEN\nSpeech:  He sent invoices to Facebook and Google.\nScene 17 - OCR Text: {122 MILLION STOLEN\nSpeech:  This invoice is outstanding for 45 days.\nScene 18 - OCR Text: {122 MILLION STOLEN\nSpeech:  And nobody checked what the invoice was for, they just paid it.\nScene 19 - OCR Text: {122 MILLION STOLEN\nSpeech:  Do you know how much he must have been invoicing to get her to run up 120 years?\nScene 20 - OCR Text: {122 MILLION STOLEN\nSpeech:  Alright, round of applause.\nScene 21 - OCR Text: {122 MILLION STOLEN\nScene 22 - OCR Text: {122 MILLION STOLEN\nSpeech:  Round of applause to that man, bro.\nSpeech:  Like a Zuckerberg and all them, man should have been like...\nSpeech:  He deserves it, bro.\n",
+    "audio_tags": "Speech, Snicker"
+  },
+  "5902367b4d7d4c38fe4638593ddea7ee": {
+    "label": "engaging",
+    "concepts": [
+      "Cultural diversity",
+      "Vibrant visuals",
+      "Energetic music",
+      "Sense of community",
+      "Emotional connection",
+      "Celebration of identity",
+      "Positive messaging",
+      "Interactive elements",
+      "Dynamic movement",
+      "Enthusiastic expressions"
+    ],
+    "content": "Scene 1 - Visual: a group of young men holding up a flag of guinea\nScene 1 - Visual: a man jumping in the water with a flag near a harbor\nSpeech:  Cameroon, welcome to Zanzibar!\nScene 2 - Visual: a group of people jumping on bricks into the water\nScene 4 - OCR Text: A SONG YOU ALL MUST HEAR\nScene 5 - OCR Text: LIBIANCA PEOPLE\nScene 6 - OCR Text: WE LOVE YOU LIBIANCA\nScene 7 - OCR Text: Bn\nScene 9 - OCR Text: 6\n",
+    "audio_tags": "Music, Afrobeat, Music of Africa"
+  },
+  "5aae86df24c6cc2a075d63a70ca20464": {
+    "label": "engaging",
+    "concepts": [
+      "Festive atmosphere",
+      "Social interaction",
+      "Emotional expression",
+      "Celebratory theme",
+      "Dynamic visuals",
+      "Relatable content",
+      "Positive energy",
+      "High-energy music",
+      "Crowd ambiance",
+      "Personal connection"
+    ],
+    "content": "Scene 1 - Visual: a blurry image of a lady with open mouth\nScene 1 - Visual: a woman taking a selfie with people in the background\nSpeech:  HAPPY NEW YEAR!\n",
+    "audio_tags": "Music, Crowd, Speech"
+  },
+  "73820e5bd5823024e2511184dd619db4": {
+    "label": "not_engaging",
+    "concepts": [
+      "Repetitive visuals",
+      "Lack of dynamic movement",
+      "Monotonous color scheme",
+      "Unclear narrative",
+      "Repetitive lyrics",
+      "Lack of visual variety",
+      "Minimal context or story",
+      "Predictable audio pattern",
+      "Absence of emotional connection",
+      "Static imagery"
+    ],
+    "content": "Scene 1 - Visual: a red sky over the roof tops of a building\nScene 1 - Visual: an orange and red sky with a building next to it\nSpeech:  You've been hit me keep it hit me with precision I wonder if you look both ways when I cross my mind\nSpeech:  I said I said I'm sicker sicker sicker sicker\n",
+    "audio_tags": "Music, Rapping, Hip hop music"
+  },
+  "74e6e5975608e3d9e279633615591cca": {
+    "label": "engaging",
+    "concepts": [
+      "Relatable pet behavior",
+      "Humorous text overlay",
+      "Cute animal focus",
+      "Unexpected action description",
+      "Imaginative dream scenario",
+      "Relaxing audio (snoring)",
+      "Emotional connection with pets",
+      "Short, digestible content",
+      "Visual storytelling",
+      "Engaging curiosity"
+    ],
+    "content": "Scene 1 - Visual: a dog lying down with his eyes closed and a text overlaid on the image\nScene 1 - OCR Text: Tired hun l'm paggered woke myself up doing massive jump full body nearly lifted off the bed went white wonder what was dreaming about\n",
+    "audio_tags": "Snoring, Animal, Dog"
+  },
+  "7a8a02ced9e13e74129c143635cce028": {
+    "label": "engaging",
+    "concepts": [
+      "Clear brand messaging",
+      "Consistent visual theme",
+      "Repetitive branding elements",
+      "Upbeat music",
+      "Simple, direct text",
+      "Visual focus on product",
+      "Use of familiar settings",
+      "Concise, memorable text",
+      "High-energy audio atmosphere"
+    ],
+    "content": "Scene 1 - Visual: falcon blagos opens a metal door with a lever\nScene 1 - Visual: a picture of a bedroom with a window that reads falcon blinds\nScene 1 - OCR Text: FALCON BLINDS MOTORISED ROLLERS\nSpeech:  Upbeat traditionalcier music\nScene 2 - Visual: a photo of a white wall with the word falcon blinds on it\nScene 2 - OCR Text: FALCON BLINDS MOTORISED ROLLERS\nScene 3 - OCR Text: FALCON BLINDS MOTORISED ROLLERS\nSpeech:  you\n",
+    "audio_tags": "Music, Electronic music"
+  },
+  "7f8cb092dd8a3606b23374019bf0cabb": {
+    "label": "not_engaging",
+    "concepts": [
+      "Lack of clear narrative",
+      "Absence of relatable content",
+      "Overly simplistic visuals",
+      "No emotional connection",
+      "Repetitive or monotonous elements",
+      "Lack of context or explanation",
+      "Distracting or irrelevant audio",
+      "Unclear purpose or message",
+      "Limited audience appeal",
+      "No engaging dialogue or interaction"
+    ],
+    "content": "Scene 1 - Visual: a woman wearing a very big breast standing in the grass\n",
+    "audio_tags": "Music, Singing, Shout"
+  },
+  "86ccc905e1f696bd24247d451217c85a": {
+    "label": "not_engaging",
+    "concepts": [
+      "Repetitive visual descriptions",
+      "Lack of narrative progression",
+      "Overemphasis on appearance",
+      "Inappropriate or suggestive dialogue",
+      "Lack of clear context",
+      "Minimal action or movement",
+      "Redundant character focus",
+      "Absence of engaging storyline",
+      "Predictable interactions",
+      "Limited audio variety"
+    ],
+    "content": "Scene 1 - Visual: a girl wearing a red and white dress is on a webcam\nScene 1 - Visual: a beautiful blond in a red dress playing a video\nScene 1 - Visual: the beautiful blonde lady has a very small breast\nScene 1 - Visual: a very sexy blonde woman wearing a red dress\nScene 1 - Visual: a blonde woman in a floral dress playing video games\nScene 1 - Visual: a beautiful young blond woman in a red dress\nScene 1 - Visual: blonde woman wearing red dress while staring in camera\nSpeech:  Steckt das schon?\nSpeech:  Ich find das Loch irgendwie nicht.\nSpeech:  Ach da unten gibt's ja nur zwei Löcher, Stella.\nSpeech:  Ja, aber da ist eins hinten und eins vorne.\nSpeech:  Ja, das hintere natürlich.\nSpeech:  Aber das ist so eng.\nSpeech:  Ach, come on, einfach reinstecken.\nSpeech:  Komm, ich zeig's dir.\nSpeech:  Da!\nSpeech:  Ja!\n",
+    "audio_tags": "Speech, Computer keyboard, Typing"
+  },
+  "88d98e814f885730dfb1e12cceba0e73": {
+    "label": "not_engaging",
+    "concepts": [
+      "Monotonous speech delivery",
+      "Lack of clear narrative",
+      "Repetitive language",
+      "Unclear purpose or message",
+      "No visual excitement",
+      "Background noise distraction",
+      "Absence of emotional appeal",
+      "Lack of engaging visuals",
+      "No interactive elements",
+      "Unfocused content"
+    ],
+    "content": "Speech:  यह कैसे लग रही है यह मैंने अभी देखना था क्योंकि नहीं पहले पहले थी तो देखना था ज़िनकि ज़िनकि नहीं पहले थी\n",
+    "audio_tags": "Speech, Inside, public space, Music"
+  },
+  "9be2d4d5e8d4bfd1f5ce59f51d7d96dd": {
+    "label": "engaging",
+    "concepts": [
+      "Unpredictable character behavior",
+      "Direct eye contact with camera",
+      "Casual, informal speech",
+      "Humor through awkwardness",
+      "Relatable everyday scenarios",
+      "Quick scene transitions",
+      "Mysterious or ambiguous dialogue",
+      "Youthful, rebellious tone",
+      "Emotional tension or suspense",
+      "Quirky, memorable characters"
+    ],
+    "content": "Scene 1 - Visual: closeup of a teen boy with a creepy look\nSpeech:  Yeah boys, I found out the girl was from a bit far away so I fucked her off.\nScene 2 - Visual: a man with a messy hair looks at the camera\nScene 2 - Visual: a man with blonde hair is looking into the camera\nScene 2 - Visual: a young man with a weird face looks into the camera\nScene 2 - Visual: a close up of a person in a room\nSpeech:  Um...\nSpeech:  Now I'm just gonna do all this shit anyway but...\nSpeech:  For no reason.\nSpeech:  Other than...\nSpeech:  To be... to kiss you in... nice...\n",
+    "audio_tags": "Speech, Music"
+  },
+  "a0897c7b1a3c321e1c8c70af44d3090a": {
+    "label": "not_engaging",
+    "concepts": [
+      "Repetitive lyrics",
+      "Lack of visual variety",
+      "Minimal narrative progression",
+      "Predictable audio context",
+      "Overused music genre",
+      "Generic on-screen text",
+      "Absence of dynamic elements",
+      "Limited emotional impact",
+      "Lack of unique content"
+    ],
+    "content": "Scene 1 - OCR Text: It's A Vibe 2 Chainz\nSpeech:  It's a vibe, let me slide, oh it's a vibe yeah yeah\n",
+    "audio_tags": "Music, Rhythm and blues, Hip hop music"
+  },
+  "a2f180b138257cc9dc424d367ea6723d": {
+    "label": "not_engaging",
+    "concepts": [
+      "Repetitive self-promotion",
+      "Lack of visual variety",
+      "Overemphasis on personal accounts",
+      "No storytelling elements",
+      "Absence of audience interaction",
+      "Monotonous speech delivery",
+      "Limited content diversity",
+      "No clear value proposition",
+      "Lack of engaging visuals",
+      "Minimal emotional appeal"
+    ],
+    "content": "Speech:  Subscribe to that OnlyFans. To follow my OnlyFans, follow me on Twitter.\nSpeech:  Smoke from Big O. B-I-G-O.\nSpeech:  My OnlyFans and my Twitter bio, Smoke from Big O.\n",
+    "audio_tags": "Speech"
+  },
+  "a54bb98f77d38f234aace5ea88696a67": {
+    "label": "engaging",
+    "concepts": [
+      "Catchy phrases",
+      "Playful language",
+      "Positive energy",
+      "Humor elements",
+      "Enthusiastic expressions",
+      "Simple math references",
+      "Exclamatory sounds",
+      "Conversational tone",
+      "Emotional audio cues",
+      "Engaging speech pattern"
+    ],
+    "content": "Scene 1 - OCR Text: JANUARY 2023 AM\nSpeech:  Wooo!\nSpeech:  Looking like 10 over 10 plus 10\nSpeech:  minus nothing.\nSpeech:  Ha!\nSpeech:  Add everything.\n",
+    "audio_tags": "Speech, Wail, moan"
+  },
+  "a632418aaa7bacb5970d9f8b9db5ad1d": {
+    "label": "not_engaging",
+    "concepts": [
+      "Repetitive lyrics",
+      "Lack of narrative",
+      "Minimal visual variety",
+      "Overused themes",
+      "Predictable content",
+      "Lack of emotional depth",
+      "No clear message",
+      "Generic music",
+      "Absence of dynamic elements",
+      "Limited audience appeal"
+    ],
+    "content": "Scene 1 - Visual: a girl dressed in lingerie and a cat ear and collar\nSpeech:  🎵 I love the way you move, I love the way you move, I love the way you move, I wanna say to you, I love the way you move 🎵\n",
+    "audio_tags": "Music, Singing"
+  },
+  "b2350338e5687ed11c7fa90dab03919a": {
+    "label": "not_engaging",
+    "concepts": [
+      "Repetitive visual scenes",
+      "Lack of dynamic visuals",
+      "Monotonous speech delivery",
+      "Minimal visual variety",
+      "Overly abstract speech",
+      "Lack of narrative progression",
+      "Absence of emotional engagement",
+      "Static camera angles",
+      "Predictable content structure",
+      "Limited visual context"
+    ],
+    "content": "Scene 1 - Visual: a bridge that is over some water on the ground\nScene 1 - Visual: the photo is from underneath a bridge looking down at a body of water\nScene 1 - Visual: an image of the ground under a bridge with some sticks sticking out of it\nScene 1 - Visual: the view from underneath an elevated bridge shows light from the water\nScene 1 - Visual: looking under a bridge into a body of water\nScene 1 - OCR Text: Sober Mind Monaleo\nSpeech:  So you should tighten up.\nSpeech:  And when you get that through your head, then you might lighten up.\nSpeech:  I know you trying, but it don't seem to be quite enough.\nSpeech:  The sun is shining, but it don't seem to be bright enough.\nSpeech:  This little mind of mine, it take time.\nSpeech:  If I ever get to thinking too much, I take five.\nScene 2 - OCR Text: Sober Mind Monaleo\nSpeech:  I'd be damned if I let a bad thought take mine.\nScene 3 - OCR Text: Sober Mind Monaleo\nSpeech:  I'm protecting my peace like the laws at the state line.\n",
+    "audio_tags": "Music, Speech, Rapping"
+  },
+  "b2aae9e7f35848c22039d0d57a9d40c2": {
+    "label": "not_engaging",
+    "concepts": [],
+    "content": "",
+    "audio_tags": ""
+  },
+  "b9d4a301eecbc3aac058fcf11de7be51": {
+    "label": "not_engaging",
+    "concepts": [
+      "Repetitive text and visuals",
+      "Lack of clear narrative",
+      "Confusing or unclear message",
+      "Minimal visual variety",
+      "Unclear or irrelevant speech",
+      "Poorly executed humor or meme",
+      "Lack of emotional connection",
+      "Inconsistent or distracting captions",
+      "Absence of engaging audio elements",
+      "Overused or generic themes"
+    ],
+    "content": "Scene 1 - Visual: a person who is drawing a note pad and pencil\nScene 1 - OCR Text: POV: we al have that @ne friend them tag\nSpeech:  왜임..?\nScene 2 - Visual: a person cutting a piece of paper on a table\nScene 2 - OCR Text: P@V: we all have that @ne friend them tag\nScene 3 - Visual: a man looking out a glass building and the caption is'pow we've all have that one friend '\nScene 3 - OCR Text: @ne friend them tag\nSpeech:  defects\n",
+    "audio_tags": "Breaking"
+  },
+  "bbfbdbb61347bedbaf24a1f6e6392928": {
+    "label": "not_engaging",
+    "concepts": [
+      "Lack of narrative or storyline",
+      "Repetitive visual elements",
+      "Minimal on-screen text",
+      "Absence of dialogue or speech",
+      "Generic music choice",
+      "No character development",
+      "Predictable scenes",
+      "Lack of emotional connection",
+      "Limited visual variety",
+      "No clear message or theme"
+    ],
+    "content": "Scene 1 - Visual: a woman in a sexy black swimsuit is on a runway\nScene 1 - OCR Text: AS O\nScene 2 - Visual: a woman with a bikini on a runway with dark hair\nSpeech:  🎶 Music Outro 🎶\nScene 5 - OCR Text: R\n",
+    "audio_tags": "Music, Dance music, House music"
+  },
+  "be75705de668076da83f136ccdcbebac": {
+    "label": "engaging",
+    "concepts": [
+      "Repetitive catchy phrases",
+      "Energetic club atmosphere",
+      "High-energy electronic music",
+      "Sense of authority and confidence",
+      "Emotional declarations",
+      "Interactive call to action",
+      "Fast-paced speech",
+      "Overwhelming repetition",
+      "Social and lively setting",
+      "Playful and humorous tone"
+    ],
+    "content": "Scene 1 - Visual: the blurry image of people at a club\nSpeech:  Oh, I'm a boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss, boss,\nSpeech:  boss They are the kings of sudoku\nSpeech:  Turn off the video and play one more time\nSpeech:  「Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I love you! Oh, I\n",
+    "audio_tags": "Music, Speech, Electronic music"
+  },
+  "cb4a1f99257765b199a31cb78544a9ff": {
+    "label": "engaging",
+    "concepts": [
+      "Catchy music",
+      "Aesthetic visuals",
+      "Fast-paced editing",
+      "Relatable themes",
+      "Strong rhythm",
+      "Energetic performance",
+      "Visual-text synchronization",
+      "Emotional connection",
+      "Memorable outro",
+      "Dynamic audio-visual blend"
+    ],
+    "content": "Scene 1 - OCR Text: \"speed song Aesthetic PM\nSpeech:  🎵 Outro Music 🎵\n",
+    "audio_tags": "Music, Hip hop music, Rapping"
+  },
+  "cb4e73850c5fe6ebdbc89bb877761b95": {
+    "label": "not_engaging",
+    "concepts": [
+      "Repetitive text and speech",
+      "Lack of clear narrative",
+      "Unclear or confusing dialogue",
+      "Absence of visual variety",
+      "Minimal emotional expression",
+      "Lack of engaging questions",
+      "No clear call to action",
+      "Monotonous audio context",
+      "Unresolved or vague scenarios",
+      "Lack of audience interaction"
+    ],
+    "content": "Scene 1 - OCR Text: can not believe this happened backstage B\nSpeech:  I cannot believe this happened backstage.\nSpeech:  I thought there's another way for you.\nSpeech:  Ok, take those away.\nSpeech:  And I'm going to have to ask you a question,\nSpeech:  and I would love for you to leave the microphone\nScene 2 - OCR Text: can not believe this happened backstage B (\nSpeech:  and then if you want to come back and take that.\nSpeech:  Do you have a question?\nScene 3 - OCR Text: can not believe this happened backstage B 6\nSpeech:  No\nSpeech:  Actually I don't know.\nSpeech:  But I'm going to have to do it for you.\nSpeech:  I'm going to throw it at you,\n",
+    "audio_tags": "Speech, Chatter, Music"
+  },
+  "cbae542613bc37c1f2c46f754e2b9de2": {
+    "label": "not_engaging",
+    "concepts": [
+      "Repetitive dialogue",
+      "Lack of visual variety",
+      "Predictable storyline",
+      "Overused POV theme",
+      "Minimal character development",
+      "Redundant scenes",
+      "Unresolved conflict",
+      "Lack of humor or wit",
+      "Monotonous tone",
+      "Absence of emotional depth"
+    ],
+    "content": "Scene 1 - Visual: the man is standing in the living room with a lot of boxes\nScene 1 - OCR Text: POV: Your Girlfriend has trust issues\nSpeech:  Are you fucking kidding me?\nScene 2 - Visual: a guy holds a bottle of water and stands in a room\nScene 2 - OCR Text: POV: Your Girlfriend has trust issues\nSpeech:  What?\nScene 3 - Visual: a man standing in a living room with a water bottle\nScene 3 - OCR Text: POV: Your Girlfriend has trust issues\nSpeech:  Why are you coming so late?\nScene 4 - Visual: a man holding a bottle of water standing in a living room\nSpeech:  It's 10 o'clock dude!\nScene 5 - Visual: a man is standing in a living room and holding a water bottle\nSpeech:  I told you to come back at 8pm sharp!\nScene 6 - Visual: a man with a tattoo is drinking a water bottle\nScene 7 - Visual: a man with tattoos standing next to a bottle of water\nScene 7 - Visual: a man with tattoos holding a bottle of water\nScene 7 - OCR Text: was working out\"\nSpeech:  Why weren't you posting?\nSpeech:  I was working out!\nSpeech:  Okay, why weren't you posting anything in your stories?\nSpeech:  Oh my god!\nScene 9 - OCR Text: \"Omgggg\"\nSpeech:  You probably went with another bitch, huh?\nScene 10 - OCR Text: went w my brother\"\nSpeech:  I went with my brother.\nSpeech:  Where's your brother?\nSpeech:  You guys were probably hanging out with bitches, huh?\nSpeech:  I'm done.\nScene 14 - OCR Text: 'Let me findout Sweetie?\nSpeech:  You're going to see what I do, huh?\n",
+    "audio_tags": "Speech, Music, Conversation"
+  },
+  "ce820a1e9b9e68997d190cd1dc61c098": {
+    "label": "not_engaging",
+    "concepts": [
+      "Repetitive speech",
+      "Lack of narrative progression",
+      "Unclear visual focus",
+      "Monotonous performance",
+      "Overlapping audio and speech",
+      "Lack of emotional connection",
+      "Predictable content",
+      "Absence of dynamic visuals",
+      "Redundant scenes",
+      "Limited audience interaction"
+    ],
+    "content": "Scene 1 - Visual: a big screen showing a man standing on a stage with other people\nSpeech:  I can't get enough\nScene 2 - Visual: a person standing on a stage on stage performing with many people\nSpeech:  He could be a stranger\nScene 3 - Visual: an image of a concert that is on stage\nSpeech:  He could give us second glance\nScene 4 - Visual: a stage that has an audience standing in front of it\nSpeech:  He could be a trust me\nScene 5 - Visual: a man standing on a stage holding a cellphone\nSpeech:  No, no, no\nScene 6 - Visual: an image of a couple performing on stage together\nSpeech:  I can't stand the drama\nSpeech:  But I've got my standards\nSpeech:  I love you like I can't, can't, can't\nSpeech:  Why are you looking down on the wrong girl?\nSpeech:  I'm the heart, you're the soul, you're the soul\nSpeech:  And I can't remember\nSpeech:  Oh, I can't remember\nSpeech:  I love you like I can't, can't, can't\nSpeech:  I love you like I can't, can't, can't\nSpeech:  I trust and tell her\n",
+    "audio_tags": "Music, Singing, Shout"
+  },
+  "ce9e4ea25e5ae6a0265fa2ed98da36ae": {
+    "label": "not_engaging",
+    "concepts": [
+      "Monotonous speech",
+      "Lack of clear message",
+      "Minimal emotional expression",
+      "Repetitive language",
+      "Absence of visual interest",
+      "No dynamic elements",
+      "Limited context or background",
+      "Lack of storytelling",
+      "No audience interaction",
+      "Predictable content"
+    ],
+    "content": "Speech:  I'm like, I'm just thinking.\n",
+    "audio_tags": "Speech"
+  },
+  "d0968c54c8c85748fcb347335a1567a8": {
+    "label": "engaging",
+    "concepts": [
+      "Intriguing animal behavior",
+      "Mysterious setting",
+      "Repetitive speech pattern",
+      "Unclear narrative",
+      "Unexpected elements",
+      "Visual curiosity",
+      "Conversational tone",
+      "Sense of exploration",
+      "Ambiguous context",
+      "Dynamic movement"
+    ],
+    "content": "Scene 1 - Visual: an animal is walking on a dirty floor next to an opening in a stone building\nSpeech:  yw'r bwyd yn y byd\nScene 2 - Visual: an animal is walking on a dirty floor next to an opening in a stone building\nScene 3 - Visual: a blurry image of an entrance to a zoo\nScene 3 - Visual: a wooden door with some holes in it by a wall\nSpeech:  dwi ddim yn ffocio ar y ffynnydd yma\nSpeech:  dwi'n meddwl dwi'n meddwl\nScene 4 - Visual: a guy walks down some steps with a skate board\nSpeech:  mae'n ddangos\nSpeech:  dwi'n meddwl\nSpeech:  dwi'n meddwl\nSpeech:  dwi'n meddwl\nSpeech:  dwi'n meddwl\nSpeech:  fe allwn justio i'r allyn\n",
+    "audio_tags": "Speech, Door"
+  },
+  "d15be6cd1c8e31623fedff9da7458b2a": {
+    "label": "not_engaging",
+    "concepts": [
+      "Lack of clear narrative",
+      "Disjointed scenes",
+      "Unclear on-screen text",
+      "Random speech without context",
+      "Inconsistent theme",
+      "Unrelated audio context",
+      "No emotional connection",
+      "Confusing visual elements",
+      "Lack of focus",
+      "Absence of engaging dialogue"
+    ],
+    "content": "Scene 1 - Visual: a kid raising their hand into the air with a caption below him\nScene 1 - OCR Text: syndome\nSpeech:  Now everything's technical\nScene 2 - Visual: a man talking to another man in costume at a party\nSpeech:  Hey now, hey now\nScene 3 - OCR Text: We couldu?t have @uselves\nSpeech:  This is what dreams are made of\n",
+    "audio_tags": "Music, Speech, Music of Asia"
+  },
+  "d2b6efcd44f281bba29a9a8749526064": {
+    "label": "engaging",
+    "concepts": [
+      "Nostalgic references",
+      "Humor elements",
+      "Catchy music",
+      "Crowd interaction",
+      "Unique speech patterns",
+      "Emotional connection",
+      "Pop culture references",
+      "Surprising combinations",
+      "Relatable content",
+      "Playful tone"
+    ],
+    "content": "Scene 1 - OCR Text: Teletubbie and mumma Ru, my life is complete\nSpeech:  H-H-HOBSON  автомобИль...\n",
+    "audio_tags": "Music, Speech, Crowd"
+  },
+  "d8d836fe8761bfa207f2a9923e4ee970": {
+    "label": "not_engaging",
+    "concepts": [
+      "Repetitive lyrics",
+      "Lack of visual variety",
+      "Minimal narrative progression",
+      "Overused song references",
+      "Predictable content",
+      "Limited emotional impact",
+      "Generic dance music",
+      "Absence of unique elements",
+      "Uninspired text usage",
+      "Lack of engaging visuals"
+    ],
+    "content": "Scene 1 - OCR Text: NEE\nSpeech:  You can't tell me nothing\nSpeech:  Yeah, I'm gonna take my watch to the whole town road\nScene 3 - OCR Text: YEE\nSpeech:  I'm gonna ride till I can't no more\nSpeech:  I'm gonna ride till I can't no more\n",
+    "audio_tags": "Music, Dance music, House music"
+  },
+  "d94395aa466448947e0eeb46e0e6b93b": {
+    "label": "engaging",
+    "concepts": [
+      "Relatable speech content",
+      "Popular music genre",
+      "High engagement metrics",
+      "Influential social media presence",
+      "Provocative question posed",
+      "Use of original audio",
+      "Strong emotional appeal",
+      "Cultural references",
+      "Interactive call-to-action",
+      "Trending topic discussion"
+    ],
+    "content": "Scene 1 - OCR Text: EE 4G 7:06 pm Reels OMG 121 k 662 richiebee cruisefm.co.uk Follow Liked by lucosbk187 and 121,953 others richiebee cruisefm.co. uk Oriainal audio\nSpeech:  I'm never gonna go against the grain, uh.\nSpeech:  Never gonna be the one telling my brother when police is gotta detain.\nScene 2 - OCR Text: EE 4G 7:06 pm Reels They are doing Gunna wrong with this one 64.5 k TAKEOFF SAID IT BEST @TRAPVIP 888 iamtrapvip Follow Do you think they're doing Gunna wrong 9 iamtrapvip Original audio\nSpeech:  Cap.\n",
+    "audio_tags": "Music, Speech, Hip hop music"
+  },
+  "da134bd28bd78f13d0f6934f03ce8a8b": {
+    "label": "engaging",
+    "concepts": [
+      "Nostalgic theme",
+      "Emotional connection",
+      "Multilingual elements",
+      "Animal sounds",
+      "Cultural diversity",
+      "Intriguing speech",
+      "Memorable text",
+      "Sense of adventure",
+      "Curiosity-driven content",
+      "Engaging storytelling"
+    ],
+    "content": "Scene 1 - OCR Text: Take me back to this day\nSpeech:  देमाट्रणिज देजानी मामराउर्मयाक जाहिरी\n",
+    "audio_tags": "Speech, Animal"
+  },
+  "db194541a5499902de99d4c9784d2dd7": {
+    "label": "engaging",
+    "concepts": [
+      "Achievement notifications",
+      "Gamification elements",
+      "Mystery or intrigue",
+      "Humor or unexpected elements",
+      "Animal presence",
+      "Relaxing or soothing sounds",
+      "Narrative progression",
+      "Interactive or participatory feel",
+      "Sense of accomplishment",
+      "Familiar or relatable themes"
+    ],
+    "content": "Scene 2 - OCR Text: 41F 845 WE'RE\nScene 3 - OCR Text: Achievement unlocked XBC\nScene 4 - OCR Text: d 44 1770600 h NN 1993 Concannon Ingr Road Mlcro Fields Indus trial Eslare 'HANIE FORRESTER 'IELD DRIVE\nScene 5 - OCR Text: Achievement unlocked XBOX\n",
+    "audio_tags": "Speech, Animal, Snoring"
+  },
+  "e450f3cb167a794c095ffc56aa0e5ace": {
+    "label": "not_engaging",
+    "concepts": [
+      "Lack of context",
+      "Minimal dialogue",
+      "Unclear narrative",
+      "Limited emotional impact",
+      "Absence of visual elements",
+      "No engaging storyline",
+      "Short duration",
+      "Repetitive phrases",
+      "Lack of visual cues",
+      "Monotone speech"
+    ],
+    "content": "Speech:  That's good. I'll blow it.\nSpeech:  She burned it!\n",
+    "audio_tags": "Speech"
+  },
+  "e45aaa56bcc19b9ccf33c530a0eecaa0": {
+    "label": "not_engaging",
+    "concepts": [
+      "Repetitive speech",
+      "Lack of visual variety",
+      "Monotonous audio",
+      "Unclear narrative",
+      "Minimal action or movement",
+      "Lack of emotional appeal",
+      "No clear focus or topic",
+      "Absence of engaging visuals",
+      "Predictable content",
+      "Limited audience interaction"
+    ],
+    "content": "Scene 1 - OCR Text: 3\nSpeech:  وضعي حاليا\nSpeech:  وضعي حاليا\nSpeech:  طبعا مع توتو\nSpeech:  مع البس وضعي حاليا\nSpeech:  وانا برتب في الاكسسوريز\nSpeech:  شو بدي اخد شو بديش اخد\n",
+    "audio_tags": "Speech, Music, Female speech, woman speaking"
+  },
+  "e47da965aee26c70fdf0424e92298985": {
+    "label": "not_engaging",
+    "concepts": [
+      "Repetitive scenes",
+      "Lack of narrative progression",
+      "Minimal visual variety",
+      "Unclear speech context",
+      "Absence of dynamic elements",
+      "Monotonous audio background",
+      "Lack of emotional engagement",
+      "Predictable content",
+      "Limited creativity",
+      "Static camera angles"
+    ],
+    "content": "Scene 1 - Visual: a woman with red hair in a bathroom taking a selfie\nScene 2 - Visual: a woman taking a picture in her bathroom taking a selfie\nSpeech:  Look at me with sad eyesarians\nScene 3 - Visual: a girl taking a photo with a phone with an orange ring\n",
+    "audio_tags": "Music, Groan"
+  },
+  "e571b688efae2bdd4663129429023640": {
+    "label": "not_engaging",
+    "concepts": [
+      "Lack of clear storyline",
+      "Unclear character motivations",
+      "Minimal visual variety",
+      "Repetitive scenes",
+      "Lack of emotional connection",
+      "Unresolved dialogue",
+      "Mundane activities depicted",
+      "Absence of dynamic elements",
+      "Limited character development",
+      "Predictable interactions"
+    ],
+    "content": "Scene 1 - Visual: a man sits in a bed next to an old man who is using a remote\nSpeech:  Michaela goes out on several dates but never a second one. I don't know why.\nScene 2 - Visual: a girl wearing a yellow sweater is eating out of a black object\nScene 2 - Visual: a girl in a yellow sweatshirt holding a plastic cup to her mouth\nSpeech:  I don't know why either.\n",
+    "audio_tags": "Speech"
+  },
+  "e625df03cd453344ac7224842180d1be": {
+    "label": "not_engaging",
+    "concepts": [
+      "Unclear narrative or storyline",
+      "Disjointed visual elements",
+      "Confusing on-screen text",
+      "Unrelated speech to visuals",
+      "Lack of emotional connection",
+      "Overly complex dialogue",
+      "Inconsistent tone or theme",
+      "Generic music choice",
+      "Lack of character development",
+      "Absence of engaging hook"
+    ],
+    "content": "Scene 1 - Visual: a blonde girl in glasses looking at something with a message in her hands\nScene 1 - Visual: a very sexy woman wearing glasses is at the sink\nScene 1 - Visual: a women who is making a call from her social media\nScene 1 - OCR Text: Hin; 'Let{sjustfakethe relationship for socia] media\"\nSpeech:  You're the only one you're playing in this bar though\nSpeech:  Who do you think you even are though, Leonardo?\nSpeech:  Can't we all yet know that Oscar does not go to you tonight?\n",
+    "audio_tags": "Music, Rhythm and blues, Pop music"
+  },
+  "e7e1b9d39d25fc8519960bf59cdb5782": {
+    "label": "not_engaging",
+    "concepts": [
+      "Lack of narrative or story",
+      "Overused visual tropes",
+      "No clear call to action",
+      "Repetitive music choice",
+      "Absence of dynamic elements",
+      "Predictable visual composition",
+      "Minimal emotional connection",
+      "Lack of unique content",
+      "No engaging dialogue or speech",
+      "Static or unchanging scene"
+    ],
+    "content": "Scene 1 - Visual: a beautiful blonde in a pink bra top holding a phone up\n",
+    "audio_tags": "Music, Rhythm and blues"
+  },
+  "e7eb609bc9c30387d6b5e4205fce3c18": {
+    "label": "not_engaging",
+    "concepts": [
+      "Lack of clear storyline",
+      "Minimal character development",
+      "Repetitive costume theme",
+      "Limited dialogue variety",
+      "Absence of dynamic action",
+      "Predictable interactions",
+      "No emotional depth",
+      "Static visual scenes",
+      "Lack of humor or surprise",
+      "Uninspired setting"
+    ],
+    "content": "Scene 1 - Visual: two women dressed as sonic and hedgehog with blue hair\nSpeech:  Yeah!\nScene 2 - Visual: two girls dressed as sonic and red standing in the grass\nSpeech:  Wanna do something foolish?\nScene 3 - Visual: a girl with blue hair is hugging a female wearing red\nSpeech:  You even have to ask.\nScene 4 - Visual: two women with blue and red wigs and boots standing next to each other\n",
+    "audio_tags": "Speech, Groan"
+  },
+  "e8562abeb89351f93fcc55e155aff8a6": {
+    "label": "not_engaging",
+    "concepts": [
+      "Repetitive scenes",
+      "Lack of dialogue",
+      "Minimal action or movement",
+      "Unclear narrative",
+      "Overused urban setting",
+      "Unvaried music style",
+      "Redundant on-screen text",
+      "No emotional engagement",
+      "Predictable content",
+      "Lack of visual diversity"
+    ],
+    "content": "Scene 1 - Visual: a woman in an urban setting with skyscrapers is eating food\nScene 1 - OCR Text: Icannotbelieve this happened\nSpeech:  .\nScene 2 - Visual: a woman holding a sandwich in a city eating\nScene 2 - OCR Text: Icannotbelievethis happened\n",
+    "audio_tags": "Music, Steel guitar, slide guitar, Progressive rock"
+  },
+  "e86dbca9869239fcf2d04373f9efd38e": {
+    "label": "engaging",
+    "concepts": [
+      "Humorous interactions",
+      "Relatable scenarios",
+      "Surprise element",
+      "Playful dialogue",
+      "Visual contrast",
+      "Catchy phrases",
+      "Repeated theme",
+      "Light-hearted tone",
+      "Engaging characters",
+      "Conversational speech"
+    ],
+    "content": "Scene 1 - Visual: a man has two bowls of food, one is chicken and one is a man\nScene 1 - Visual: a split screen of two men with a bowl of food\nScene 1 - Visual: a screenshot of two men having food and a person\nScene 1 - Visual: two pictures of a man with different foods on his left hand\nScene 1 - Visual: a man smiling and making a funny face in a video\nScene 1 - OCR Text: CRANFORD CRANFORD London, GB\nSpeech:  Which one do you want?\nSpeech:  The one that has chicken!\nSpeech:  Alright, look at all this chicken underneath!\nSpeech:  Oh ho ho!\nSpeech:  Sango, listen for today,\nSpeech:  never judge a book by its cover, okay?\nSpeech:  Okay.\nScene 2 - OCR Text: CRANFORD CRANFORD London, GB\nSpeech:  Alright, Sango, which one do you want today?\nSpeech:  This one.\nSpeech:  Why? Never judge a book by its cover!\nSpeech:  Alright.\nSpeech:  Zong! Where's the chicken?\nSpeech:  Well, sometimes you still have to judge a book by its cover.\nSpeech:  Ha ha!\nSpeech:  Ha ha ha!\n",
+    "audio_tags": "Speech, Inside, small room, Groan"
+  },
+  "eb042efe930e4fbece0354d5d8618569": {
+    "label": "not_engaging",
+    "concepts": [
+      "Lack of visual interest",
+      "Minimal context or storyline",
+      "Unclear purpose or message",
+      "Generic greetings",
+      "Unrelated audio context",
+      "Absence of dynamic elements",
+      "Limited emotional appeal",
+      "No engaging dialogue",
+      "Predictable content",
+      "Lack of audience interaction"
+    ],
+    "content": "Scene 1 - OCR Text: saturday\nSpeech:  Heading back toοś Αjιωτά, Director's assistant\nSpeech:  Good morning!\n",
+    "audio_tags": "Speech, Animal"
+  },
+  "eb81b1215afedbf8ad5c13f178cb9ddb": {
+    "label": "not_engaging",
+    "concepts": [
+      "Blurry visuals",
+      "Lack of clear focus",
+      "Inconsistent scene transitions",
+      "Unclear narrative or purpose",
+      "Repetitive or irrelevant text",
+      "Monotonous speech",
+      "Lack of engaging visuals",
+      "Disjointed audio and visual elements",
+      "Minimal viewer interaction",
+      "Absence of dynamic content"
+    ],
+    "content": "Scene 1 - Visual: a blurry video taken from a camera of a blurry picture with words written in arabic\nScene 1 - Visual: a person putting something in a jar with their hands\nSpeech:  نضيف نصف ملعقة زيت زيتون و ملح\nScene 2 - Visual: a woman putting a baby up in her lap\nSpeech:  نخلط الماء والملح والزيت\nSpeech:  نضيف الماء والزيتون\nScene 9 - OCR Text: +ii\nScene 14 - OCR Text: +ii\nSpeech:  نغطي الماء و نغطي الملعقة\n",
+    "audio_tags": "Speech"
+  },
+  "ed2e77762260dae51898a588294ac175": {
+    "label": "engaging",
+    "concepts": [
+      "Relatable everyday scenarios",
+      "Humor in unexpected situations",
+      "Expressive reactions",
+      "Clear narrative progression",
+      "Use of text for emphasis",
+      "Emotional expression",
+      "Relatable frustration",
+      "Resolution of conflict",
+      "Conversational tone",
+      "Public setting ambiance"
+    ],
+    "content": "Scene 1 - Visual: a young woman sitting on a ledge with a burrito\nScene 1 - Visual: a person that is eating a sandwich on a table\nScene 1 - OCR Text: @ashavingagood day then\nSpeech:  i was having a good day then this happened\nScene 2 - OCR Text: Iliterally havetolikescape offithe cheese causelikewhy would you dothat\nScene 5 - OCR Text: seriously why would youadd all this extra workuhenl literally said\nSpeech:  seriously\nScene 6 - OCR Text: seriously whywouldyouadd allthis extraworkuhenl literally said\nScene 7 - OCR Text: donftput cheese on the bagel\nScene 8 - OCR Text: donftput cheese on the bagel\nScene 9 - OCR Text: Isaid thatforareason\nScene 10 - OCR Text: don'tevenwannaeatthis\nScene 11 - OCR Text: sorry thank you\nScene 12 - OCR Text: Shegotmeanew one\nScene 13 - OCR Text: let's freaking Mamacita\n",
+    "audio_tags": "Speech, Hubbub, speech noise, speech babble, Inside, public space"
+  },
+  "eefc85bd90c4bb8b6d6c619e3ea855d2": {
+    "label": "not_engaging",
+    "concepts": [
+      "Repetitive visual elements",
+      "Lack of narrative progression",
+      "Unclear or confusing message",
+      "Overused themes or tropes",
+      "Minimal emotional connection",
+      "Predictable content",
+      "Lack of visual variety",
+      "Unrelatable characters",
+      "Generic background music",
+      "Absence of engaging dialogue"
+    ],
+    "content": "Scene 1 - Visual: a girl with long hair wearing a bikini inside a car\nScene 1 - Visual: a woman with long hair in a bikini is sitting inside of a car\nSpeech:  Why these niggas try and mimic the image for gimmicks I'm ready to lash out\nSpeech:  I came up with Felix, I told my youngin don't hit me til he off his list\n",
+    "audio_tags": "Music, Speech, Vehicle"
+  },
+  "ef26fd368ceebce3ffda1e0c02a51a15": {
+    "label": "not_engaging",
+    "concepts": [
+      "Monotonous speech delivery",
+      "Lack of visual variety",
+      "Repetitive audio elements",
+      "Absence of clear narrative",
+      "Minimal emotional appeal",
+      "Overly complex language",
+      "No interactive elements",
+      "Poor pacing",
+      "Lack of visual cues",
+      "Unclear or absent call-to-action"
+    ],
+    "content": "Speech:  ڈیویڈیو ایڈیو ایڈیو\n",
+    "audio_tags": "Speech, Music"
+  },
+  "f17f972d9fe4512471ae21dcb7d2594c": {
+    "label": "not_engaging",
+    "concepts": [
+      "Repetitive on-screen text",
+      "Lack of visual variety",
+      "Monotonous speech delivery",
+      "Minimal narrative progression",
+      "Limited emotional expression",
+      "Absence of dynamic elements",
+      "Predictable content structure",
+      "Lack of engaging visuals",
+      "Unvaried audio context",
+      "No interactive elements"
+    ],
+    "content": "Scene 1 - OCR Text: Riniva\nSpeech:  मैंने अभी पार्चल खोला रिमीवा से, मुझे कपड़े आये हैं यहाँ पे इंडिया से.\nSpeech:  फ़र्स टाइम मैंने बहाद से कुछ मंगा आया हैं, इसमें पहुँ सारी या ड्रेसेज्ञे हैं.\nSpeech:  मैं देखूंगी थोड़ी देड में ओपन करके.\nScene 2 - OCR Text: Riniva\nScene 3 - OCR Text: Riniva\n",
+    "audio_tags": "Speech, Crumpling, crinkling, Inside, small room"
+  },
+  "f7eb16cbdb60d775b01b344b7af349ed": {
+    "label": "engaging",
+    "concepts": [
+      "Relatable topic discussion",
+      "Humor and wit",
+      "Direct audience engagement",
+      "Personal anecdotes",
+      "Encouraging empowerment",
+      "Conversational tone",
+      "Use of humor in dialogue",
+      "Varied speaker perspectives",
+      "Catchy phrases and slogans",
+      "Interactive call to action"
+    ],
+    "content": "Scene 1 - Visual: a woman singing in a microphone and a text that reads why are females scared to their shot?\nScene 1 - OCR Text: WHY AREFEMALES SCARED TO THEIR SHOT?\nSpeech:  Why are females so scared to shoot their shot?\nScene 2 - Visual: a woman sitting next to a microphone talking into a microphone\nScene 2 - OCR Text: IM NOT\nSpeech:  I'm not.\nScene 3 - Visual: a girl wearing headphones talking into a microphone\nScene 3 - Visual: a girl speaking into a microphone while wearing headphones\nSpeech:  I'm just going to say, hey, what's up?\nSpeech:  And you either want to say yes or no.\nScene 4 - Visual: woman talking to microphone on radio with caption saying she would've got my draws that night\nScene 4 - Visual: a woman is singing into a microphone while wearing headphones\nScene 4 - Visual: the woman is singing in a microphone while wearing headphones\nScene 4 - OCR Text: IASKEDMY SPOUSE TOMARRYME\nSpeech:  I actually asked my spouse to marry me.\nSpeech:  I said, you know what?\nSpeech:  I really would you we should get married.\nScene 5 - OCR Text: OK\nSpeech:  He said, oh, yeah, don't be scared to shoot your shot.\nSpeech:  This is easy.\nScene 6 - OCR Text: THESE ISEASY\nSpeech:  You can text in the morning what you're doing.\nSpeech:  And you're going to get a cup by the afternoon.\nScene 7 - OCR Text: HEGONGIVE THAT UP BY THEAFTERNOON\nSpeech:  That girl who was like, yeah, when I'm interested in\nSpeech:  a guy just send them wings at the bar and all the like, yeah,\nSpeech:  she got my drawers that night.\nSpeech:  Like it's a thing like men are easy.\nScene 8 - OCR Text: APPLEPAY HIM\nScene 9 - OCR Text: CASHAPP\nSpeech:  Apple Pay Cash App, Venmo, Apple Pay.\nScene 10 - OCR Text: APPLEPAY\nSpeech:  Because women don't do it as much.\nSpeech:  All you got to do is do some small like, oh, my God, I think she the one, bro.\nSpeech:  I'm not.\nScene 15 - OCR Text: DON'T BESCARED TOSHOOT YA SHOT\nSpeech:  So, yeah, ladies, don't be scared to shoot your shot, OK?\nSpeech:  At the end of the day, this is easy.\n",
+    "audio_tags": "Speech, Music"
+  },
+  "f832f6fd58e0e9dbbfe3ff8103875c1f": {
+    "label": "not_engaging",
+    "concepts": [
+      "Monotonous speech",
+      "Lack of enthusiasm",
+      "Repetitive statements",
+      "Unclear purpose",
+      "Low energy level",
+      "Lack of visual interest",
+      "No engaging narrative",
+      "Absence of emotional connection",
+      "Unpreparedness",
+      "Lack of focus"
+    ],
+    "content": "Speech:  Oh my gosh, I am so tired, but I slept so much. I don't know why I'm tired.\nSpeech:  But I like the little black on black on blue on blue on blue. So...\nSpeech:  Hold on.\nSpeech:  Oh my gosh, I'm tired. I have a final in such a short amount of time.\nSpeech:  Such a short amount of time. I did not study for it. I did not care.\nSpeech:  The thing about me is like I do so like...\n",
+    "audio_tags": "Speech, Inside, small room"
+  },
+  "fc1919a9bd251eac0490aaafebba8316": {
+    "label": "engaging",
+    "concepts": [
+      "Catchy title or headline",
+      "Personal connection or enthusiasm",
+      "Dynamic background music",
+      "Element of curiosity or intrigue",
+      "Relatable or trendy topic",
+      "Fast-paced or energetic delivery",
+      "Use of popular phrases or lyrics",
+      "Visual and auditory synchronization",
+      "Emotional or passionate tone",
+      "Clear and concise messaging"
+    ],
+    "content": "Scene 1 - OCR Text: 3 Best selling Jackets in JD PT 4\nSpeech:  with me I love it\nSpeech:  intuition play the cards with space to start\nSpeech:  and after he's been hooked\n",
+    "audio_tags": "Music, Exciting music"
+  }
+}

@@ -1,0 +1,34 @@
+cfg: !!python/object:utils.config_utils.Config
+  DEBUG: false
+  asso_act: softmax
+  batch_size: 128
+  check_val_every_n_epoch: 5
+  concept_select_fn: random
+  data_root: ./data
+  embedding_model: text-embedding-3-small
+  force_compute: false
+  init_val: 1.0
+  lambda_div: 0.01
+  lambda_l1: 0.001
+  lr: 0.01
+  max_epochs: 100
+  num_classes: 2
+  num_concept: 150
+  num_workers: 16
+  on_gpu: true
+  output_dir: ./results
+  project_name: LaBo2
+  seed: 42
+  test: false
+  test_ratio: 0.2
+  threshold: 0.5
+  use_concept_norm: true
+  use_content_norm: true
+  use_div_loss: false
+  use_dot_product: true
+  use_l1_loss: false
+  val_ratio: 0.2
+  video_results_path: ./video_results.json
+  work_dir: ./checkpoints
+init_weight: null
+select_idx: null
