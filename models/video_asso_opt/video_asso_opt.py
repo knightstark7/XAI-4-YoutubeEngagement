@@ -236,12 +236,7 @@ class VideoAssoConcept(pl.LightningModule):
         self.train_pred_labels.append(pred_labels.detach().cpu())
         self.train_actual_labels.append(label.detach().cpu())
         
-        # Log predicted and actual labels for first few examples in batch
-        for i in range(min(5, len(label))):
-            self.log(f'train_pred_label_{i}', pred_labels[i].item(), on_step=True, on_epoch=False)
-            self.log(f'train_actual_label_{i}', label[i].item(), on_step=True, on_epoch=False)
-        
-        # Log metrics cho mỗi batch
+        # Log metrics cho mỗi batch - không log predicted và actual labels
         self.log('train_loss_step', cls_loss, on_step=True, on_epoch=True, prog_bar=True)
         self.log('mean_l1_norm', row_l1_norm, on_step=True, on_epoch=True)
         self.log('div', div, on_step=True, on_epoch=True)
@@ -263,7 +258,7 @@ class VideoAssoConcept(pl.LightningModule):
         # Lưu loss để sử dụng trong on_train_epoch_end
         self.last_loss = final_loss
         
-        return {"loss": final_loss, "pred_labels": pred_labels, "actual_labels": label}
+        return {"loss": final_loss}
     
     def on_train_epoch_end(self):
         """
@@ -312,20 +307,15 @@ class VideoAssoConcept(pl.LightningModule):
         self.val_pred_labels.append(pred_labels.detach().cpu())
         self.val_actual_labels.append(label.detach().cpu())
         
-        # Log predicted and actual labels for first few examples in batch
-        for i in range(min(5, len(label))):
-            self.log(f'val_pred_label_{i}', pred_labels[i].item(), on_step=False, on_epoch=True)
-            self.log(f'val_actual_label_{i}', label[i].item(), on_step=False, on_epoch=True)
-        
         # Compute loss
         loss = F.cross_entropy(pred, label)
         
-        # Log metrics
+        # Log metrics - không log predicted và actual labels
         self.log('val_loss', loss)
         self.valid_acc(pred, label)
         self.log('val_acc', self.valid_acc, on_step=False, on_epoch=True)
         
-        return {"loss": loss, "pred_labels": pred_labels, "actual_labels": label}
+        return {"loss": loss}
     
     def on_validation_epoch_end(self):
         """
@@ -363,11 +353,6 @@ class VideoAssoConcept(pl.LightningModule):
         # Get predicted labels
         pred_labels = torch.argmax(pred, dim=1)
         
-        # Log predicted and actual labels for first few examples in batch
-        for i in range(min(5, len(label))):
-            self.log(f'test_pred_label_{i}', pred_labels[i].item(), on_step=False, on_epoch=True)
-            self.log(f'test_actual_label_{i}', label[i].item(), on_step=False, on_epoch=True)
-        
         # Compute loss and update metrics
         loss = F.cross_entropy(pred, label)
         self.log('test_loss', loss)
@@ -378,7 +363,7 @@ class VideoAssoConcept(pl.LightningModule):
         self.all_y.append(label)
         self.all_pred.append(pred_labels)
         
-        return {"loss": loss, "pred_labels": pred_labels, "actual_labels": label}
+        return {"loss": loss}
     
     def on_test_epoch_end(self):
         """
@@ -395,7 +380,6 @@ class VideoAssoConcept(pl.LightningModule):
         self.save_predictions('test', all_pred, all_y, limit=len(all_pred))
         
         # Thay vì log string, chúng ta sẽ log số lượng nhãn mỗi loại
-        # và lưu predictions vào file JSON
         if hasattr(self.cfg, 'output_dir'):
             # Đếm số lượng nhãn dự đoán mỗi loại (engaging/not_engaging)
             pred_count = torch.bincount(all_pred, minlength=2)
