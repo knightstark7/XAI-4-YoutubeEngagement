@@ -1,5 +1,5 @@
 '''
-    Download video, extract audio, and perform speech-to-text and video captioning.
+    Extract audio, and perform speech-to-text and video captioning.
     Finally, gather all the results and store them as a json file.
 '''
 
@@ -8,227 +8,233 @@ import os
 from glob import glob
 import json
 import torch
-import yt_dlp
 from multiprocessing import Pool
 from pathlib import Path
-import whisper
+from faster_whisper import WhisperModel
 from zero_shot_video_to_text.run import run_videos
 from tqdm import tqdm
 
-
-########## Download Videos ##########
-def filter(info, *, incomplete):
-    '''Filter function for video download'''
-    # Bỏ điều kiện kiểm tra duration
-    return None
-
-ydl_opts = {
-        'match_filter' : filter,
-        'quiet' : 'True',
-        'noplaylist' : 'True',
-        'format' : '136+140/137+140/136+m4a/137+m4a/mp4+140/18/22/mp4+m4a',
-        'outtmpl' :  '%(id)s/%(title)s.mp4'
-    }
-
-def download(url):
-    '''Given args, download the according video to the folder'''
-    if 'channel' in url:
-        return
-    ydl = yt_dlp.YoutubeDL(ydl_opts)
-    try:
-        error_code = ydl.download(url)
-    except Exception as e:
-        print(e)
-
-def download_videos_(args):
-    ydl_opts = {
-        'match_filter' : filter,
-        'quiet' : 'True',
-        'noplaylist' : 'True',
-        'format' : '136+140/137+140/136+m4a/137+m4a/mp4+140/18/22/mp4+m4a',
-        'outtmpl' : '%(id)s/%(title)s.mp4'
-    }
-    urls = ['https://youtube.com/watch?v=' + i for i in torch.load(args.video_ids) if not os.path.exists(args.root_dir + f'/{i}')]
-    with Pool(args.num_workers) as p:
-        p.map(download, urls)
-
-def download_videos(args):
-    print("Starting video download process...")
-    
-    # Cập nhật ydl_opts với các tùy chọn tốt hơn
-    ydl_opts = {
-            'match_filter' : filter,
-            'quiet' : 'True',
-            'noplaylist' : 'True',
-            'format' : '136+140/137+140/136+m4a/137+m4a/mp4+140/18/22/mp4+m4a',
-            'outtmpl' :  '%(id)s/%(title)s.mp4'
-        }
-    
-    try:
-        # Load video IDs
-        video_ids = torch.load(args.video_ids, weights_only=True)  # Sử dụng weights_only=True để tránh warning
-        if isinstance(video_ids, torch.Tensor):
-            video_ids = video_ids.tolist()
-        elif isinstance(video_ids, list):
-            video_ids = [str(v) for v in video_ids]
-            
-        print(f"Found {len(video_ids)} videos to process")
-        
-        # Tạo URLs
-        urls = []
-        for vid_id in video_ids:
-            if not os.path.exists(os.path.join(args.root_dir, vid_id)):
-                urls.append(f'https://youtube.com/watch?v={vid_id}')
-                
-        if not urls:
-            print("No new videos to download. All videos already exist.")
-            return
-            
-        print(f"Starting download of {len(urls)} videos...")
-        
-        # Tải từng video
-        ydl = yt_dlp.YoutubeDL(ydl_opts)
-        for url in urls:
-            try:
-                print(f"\nDownloading: {url}")
-                ydl.download([url])
-                print(f"Successfully downloaded: {url}")
-            except Exception as e:
-                print(f"Error downloading {url}: {str(e)}")
-                continue
-                
-        print("\nVideo download process completed!")
-        
-    except Exception as e:
-        print(f"Error in download_videos: {str(e)}")
-        raise
 
 ########## Extract Audios ##########
 def extract_audio(vid_dir):
     # extract audio from given video dir
     try:
-        # Convert to Path object for better path handling
-        video_path = Path(vid_dir)
-        # Create audio directory if it doesn't exist
-        audio_dir = video_path.parent / "audio"
-        audio_dir.mkdir(exist_ok=True)
-        # Set audio file path
-        audio_path = audio_dir / "audio.wav"
-        
-        if not audio_path.exists():
-            print(f"Extracting audio from: {video_path}")
-            # Use absolute paths for ffmpeg command
-            os.system(f'ffmpeg -y -i "{video_path.absolute()}" "{audio_path.absolute()}"')
-            print(f"Audio extracted to: {audio_path}")
+        aud_dir = Path(vid_dir).parent / "audio.wav"
+        if not os.path.exists(aud_dir):
+            print(f"Extracting audio from {vid_dir}")
+            os.system(f'ffmpeg -y -i "{vid_dir}" {aud_dir}')
+        else:
+            print(f"Audio already exists for {vid_dir}, skipping")
     except Exception as e:
-        print(f'Error extracting audio from {vid_dir}: {str(e)}')
+        print(f'Error extracting audio for {vid_dir}: {str(e)}')
 
 def extract_audios(args):
     # args.root_dir
     # |- {id}
     #    |- {title}.mp4
-    #    |-  audio/
-    #       |-  audio.wav
+    #    |-  audio.wav
     videos = glob(os.path.join(args.root_dir, '*/*.mp4'))
     if len(videos) == 0:
-        print('Warning: No videos found to process.')
+        print('Warning: No videos found in directory.')
         return
-        
-    print(f"Found {len(videos)} videos to extract audio from")
+    
+    print(f"Found {len(videos)} videos for audio extraction")
+    
     with Pool(args.num_workers) as p:
         p.map(extract_audio, videos)
 
 
 ########## Speech-to-Text ##########
 def run_whisper(args):
-    videos = [i for i in glob(args.root_dir + '/*') if os.path.isdir(i)]
-    # load model
-    model = whisper.load_model("large-v2")
-    for vid in videos:
-        # transcribe audio and store result
-        if os.path.exists(vid + '/audio.json'):
+    # Tìm tất cả thư mục video
+    video_dirs = [i for i in glob(os.path.join(args.root_dir, '*')) if os.path.isdir(i)]
+    
+    if len(video_dirs) == 0:
+        print('Warning: No video directories found.')
+        return
+    
+    print(f"Found {len(video_dirs)} video directories for speech-to-text processing")
+    
+    # Chọn device và kiểu tính toán (ví dụ: float16 cho GPU Nvidia)
+    # compute_type có thể là: float16, int8_float16, int8, float32
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    compute_type = "float16" if device == "cuda" else "float32"
+    model_size = "large-v2"
+    
+    # Tải mô hình Faster-Whisper
+    # Download model tự động vào cache nếu chưa có
+    print(f"Loading Faster-Whisper model: {model_size} on {device} with {compute_type}")
+    try:
+        model = WhisperModel(model_size, device=device, compute_type=compute_type)
+        print("Model loaded successfully.")
+    except Exception as e:
+        print(f"Error loading Faster-Whisper model: {e}")
+        print("Please ensure CUDA/cuDNN are installed correctly if using GPU.")
+        print("Falling back to CPU...")
+        try:
+            device = "cpu"
+            compute_type = "int8" # Dùng int8 trên CPU để nhanh hơn
+            model = WhisperModel(model_size, device=device, compute_type=compute_type)
+            print("Model loaded successfully on CPU.")
+        except Exception as cpu_e:
+            print(f"Failed to load model even on CPU: {cpu_e}")
+            return # Thoát nếu không tải được model
+    
+    for vid_dir in tqdm(video_dirs, desc="Processing speech-to-text"):
+        audio_file = os.path.join(vid_dir, 'audio.wav')
+        json_file = os.path.join(vid_dir, 'audio.json')
+        
+        # Skip if JSON already exists or audio doesn't exist
+        if os.path.exists(json_file):
+            # print(f"Speech-to-text already exists for {vid_dir}, skipping") # Giảm log thừa
             continue
-        result = model.transcribe(vid + '/audio.wav')
-        with open(vid + '/audio.json', 'w') as f:
-            json.dump(result, f, indent=2)
+        
+        if not os.path.exists(audio_file):
+            # print(f"Audio file not found for {vid_dir}, skipping") # Giảm log thừa
+            continue
+        
+        # transcribe audio and store result using Faster-Whisper
+        try:
+            # print(f"Transcribing audio for {vid_dir}") # Giảm log thừa
+            # Tham số beam_size=5 là mặc định, có thể điều chỉnh
+            # language='vi' để ưu tiên tiếng Việt nếu biết trước
+            segments, info = model.transcribe(audio_file, beam_size=5, language='vi', vad_filter=True)
             
+            # Chuyển kết quả segments thành định dạng giống OpenAI Whisper
+            result = {
+                "text": " ".join([segment.text.strip() for segment in segments]),
+                "segments": [
+                    {
+                        "id": i,
+                        "seek": segment.seek,
+                        "start": segment.start,
+                        "end": segment.end,
+                        "text": segment.text.strip(),
+                        "tokens": segment.tokens,
+                        "temperature": segment.temperature,
+                        "avg_logprob": segment.avg_logprob,
+                        "compression_ratio": segment.compression_ratio,
+                        "no_speech_prob": segment.no_speech_prob
+                    } for i, segment in enumerate(segments)
+                ],
+                "language": info.language
+            }
+            
+            with open(json_file, 'w', encoding='utf-8') as f:
+                json.dump(result, f, indent=2, ensure_ascii=False)
+            # print(f"Saved transcription to {json_file}") # Giảm log thừa
+        except Exception as e:
+            print(f"Error transcribing audio for {vid_dir}: {str(e)}")
+
 
 ########## Video Captioning ##########
 def run_vidcap(args):
-    videos = glob(args.root_dir + '/*/*.mp4')
-    audios = glob(args.root_dir + '/*/audio.json')
-    videos_w_stt = []
-    for vid, aud in zip(videos, audios):
-        with open(aud) as f:
-            aud_json = json.load(f)
-        if len(aud_json['text']) > 0:
-            videos_w_stt.append(vid)
-    run_videos(args, videos_w_stt)
+    # Find all videos that have audio transcriptions
+    videos_with_stt = []
+    
+    for video_dir in glob(os.path.join(args.root_dir, '*')):
+        if not os.path.isdir(video_dir):
+            continue
+            
+        video_files = glob(os.path.join(video_dir, '*.mp4'))
+        audio_json = os.path.join(video_dir, 'audio.json')
+        caption_file = os.path.join(video_dir, 'caption.txt')
+        
+        # Skip if no video files or already has caption
+        if not video_files:
+            print(f"No video file found in {video_dir}")
+            continue
+            
+        if os.path.exists(caption_file):
+            print(f"Caption already exists for {video_dir}, skipping")
+            continue
+            
+        # Check if audio transcription exists and has content
+        if os.path.exists(audio_json):
+            try:
+                with open(audio_json) as f:
+                    audio_data = json.load(f)
+                if audio_data['text']:
+                    videos_with_stt.append(video_files[0])  # Use the first video file if multiple exist
+            except Exception as e:
+                print(f"Error reading audio json for {video_dir}: {str(e)}")
+    
+    if not videos_with_stt:
+        print("No videos found with speech transcriptions for captioning")
+        return
+        
+    print(f"Found {len(videos_with_stt)} videos for captioning")
+    run_videos(args, videos_with_stt)
 
 
 ########## Gather ##########
 def gather_info(args):
-    try:
-        # Load video IDs from .pt file
-        video_list = torch.load(args.video_ids)
-        if isinstance(video_list, torch.Tensor):
-            video_list = video_list.tolist()
-        elif isinstance(video_list, list):
-            video_list = [str(v) for v in video_list]
-    except Exception as e:
-        print(f"Error loading video IDs: {str(e)}")
-        return
+    # Find all video directories
+    video_dirs = [d for d in glob(os.path.join(args.root_dir, '*')) if os.path.isdir(d)]
     
-    for video_id in tqdm(video_list):
-        pth = os.path.join(args.root_dir, video_id, 'caption.txt')
-        if not os.path.exists(pth):
+    if not video_dirs:
+        print("No video directories found for gathering info")
+        return
+        
+    print(f"Gathering information for {len(video_dirs)} video directories")
+    
+    for video_dir in tqdm(video_dirs, desc="Gathering info"):
+        video_id = os.path.basename(video_dir)
+        caption_path = os.path.join(video_dir, 'caption.txt')
+        audio_json = os.path.join(video_dir, 'audio.json')
+        info_json = os.path.join(video_dir, 'info.json')
+        
+        # Skip if info.json already exists
+        if os.path.exists(info_json):
+            print(f"Info already exists for {video_id}, skipping")
             continue
             
-        # Get base directory for the video
-        video_dir = os.path.dirname(pth)
+        # Skip if caption or audio doesn't exist
+        if not os.path.exists(caption_path):
+            print(f"Caption not found for {video_id}, skipping")
+            continue
+            
+        if not os.path.exists(audio_json):
+            print(f"Audio transcription not found for {video_id}, skipping")
+            continue
         
         # Read audio transcription
-        audio_json = os.path.join(video_dir, 'audio.json')
         try:
             with open(audio_json) as f:
                 audio_data = json.load(f)
-        except FileNotFoundError:
-            print(f"Warning: Could not find audio file for {video_id}")
+        except Exception as e:
+            print(f"Error reading audio json for {video_id}: {str(e)}")
             continue
 
         # Read caption
         try:
-            with open(pth) as f:
+            with open(caption_path) as f:
                 caption = f.read().strip()
-        except:
-            print(f"Warning: Could not read caption for {video_id}")
+        except Exception as e:
+            print(f"Error reading caption for {video_id}: {str(e)}")
             continue
 
         # Save results
-        output_file = os.path.join(video_dir, 'info.json')
         try:
             results = {
                 'audio': audio_data,
                 'caption': caption
             }
-            with open(output_file, 'w') as f:
+            with open(info_json, 'w') as f:
                 json.dump(results, f, indent=2)
+            print(f"Saved info for {video_id}")
         except Exception as e:
             print(f"Error saving results for {video_id}: {str(e)}")
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Extract information from YouTube videos')
+    parser = argparse.ArgumentParser(description='Extract information from videos in directory')
     
     # Thêm các tham số cần thiết
-    parser.add_argument('--root_dir', type=str, default='videos',
-                      help='Root folder to store youtube videos')
-    parser.add_argument('--video_ids', type=str, default='video_ids.pt',
-                      help='Path to .pt file containing list of video IDs')
+    parser.add_argument('--root_dir', type=str, default='D:/school/Thesis/ExFunTube/pipeline/test_videos',
+                      help='Root folder containing videos')
     parser.add_argument('--num_workers', type=int, default=4,
                       help='Number of worker processes for parallel processing')
-    parser.add_argument('--skip_download', action='store_true',
-                      help='Skip video download step')
     parser.add_argument('--skip_audio', action='store_true',
                       help='Skip audio extraction step')
     parser.add_argument('--skip_whisper', action='store_true',
@@ -244,38 +250,23 @@ def main():
         print(f"Created root directory: {args.root_dir}")
     
     try:
-        # Kiểm tra file video_ids.pt
-        if not os.path.exists(args.video_ids):
-            raise FileNotFoundError(f"Video IDs file not found: {args.video_ids}")
-            
-        # Load và kiểm tra video IDs
-        video_ids = torch.load(args.video_ids)
-        if not isinstance(video_ids, (list, torch.Tensor)):
-            raise ValueError("Video IDs must be a list or tensor")
-        print(f"Loaded {len(video_ids)} video IDs")
-        
         # Thực hiện các bước xử lý
-        if not args.skip_download:
-            print('\n1. Downloading videos...')
-            download_videos(args)
-            print('✓ Video download completed')
-        
         if not args.skip_audio:
-            print('\n2. Extracting audio from videos...')
+            print('\n1. Extracting audio from videos...')
             extract_audios(args)
             print('✓ Audio extraction completed')
         
         if not args.skip_whisper:
-            print('\n3. Running speech-to-text...')
+            print('\n2. Running speech-to-text...')
             run_whisper(args)
             print('✓ Speech-to-text completed')
         
         if not args.skip_caption:
-            print('\n4. Running video captioning...')
+            print('\n3. Running video captioning...')
             run_vidcap(args)
             print('✓ Video captioning completed')
         
-        print('\n5. Gathering all information...')
+        print('\n4. Gathering all information...')
         gather_info(args)
         print('✓ Information gathering completed')
         
