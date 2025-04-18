@@ -2,9 +2,31 @@
     "predictions": [
         {
             "sample": 0,
+            "video_id": "2d3982f90f1f9fe46f7bc5464f1676db",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4542,
+                    "engaging": 0.5458
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 1,
+            "video_id": "19c72ffc008899cf9ab8af8a4c6e0dc5",
             "predicted": {
                 "numeric": 0,
-                "text": "not_engaging"
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.6389,
+                    "engaging": 0.3611
+                }
             },
             "actual": {
                 "numeric": 0,
@@ -13,10 +35,32 @@
             "is_correct": true
         },
         {
-            "sample": 1,
+            "sample": 2,
+            "video_id": "287ba5bbd25c87ac1ffb288f4a746e5c",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4452,
+                    "engaging": 0.5548
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 3,
+            "video_id": "1cde6912374dac97558a96f6956e8d58",
             "predicted": {
                 "numeric": 0,
-                "text": "not_engaging"
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5802,
+                    "engaging": 0.4198
+                }
             },
             "actual": {
                 "numeric": 1,
@@ -25,70 +69,66 @@
             "is_correct": false
         },
         {
-            "sample": 2,
-            "predicted": {
-                "numeric": 0,
-                "text": "not_engaging"
-            },
-            "actual": {
-                "numeric": 0,
-                "text": "not_engaging"
-            },
-            "is_correct": true
-        },
-        {
-            "sample": 3,
-            "predicted": {
-                "numeric": 0,
-                "text": "not_engaging"
-            },
-            "actual": {
-                "numeric": 0,
-                "text": "not_engaging"
-            },
-            "is_correct": true
-        },
-        {
             "sample": 4,
+            "video_id": "56ebb091412e48ee34657e8bf8332c21",
             "predicted": {
                 "numeric": 1,
-                "text": "engaging"
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4932,
+                    "engaging": 0.5068
+                }
             },
             "actual": {
-                "numeric": 1,
-                "text": "engaging"
+                "numeric": 0,
+                "text": "not_engaging"
             },
-            "is_correct": true
+            "is_correct": false
         },
         {
             "sample": 5,
+            "video_id": "19fec3d424e92dcbb8d992911e846fde",
             "predicted": {
                 "numeric": 0,
-                "text": "not_engaging"
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5775,
+                    "engaging": 0.4225
+                }
             },
             "actual": {
-                "numeric": 0,
-                "text": "not_engaging"
+                "numeric": 1,
+                "text": "engaging"
             },
-            "is_correct": true
+            "is_correct": false
         },
         {
             "sample": 6,
+            "video_id": "d34aa7dce0d89cd61e1a0c609aeac158",
             "predicted": {
-                "numeric": 1,
-                "text": "engaging"
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5945,
+                    "engaging": 0.4055
+                }
             },
             "actual": {
-                "numeric": 1,
-                "text": "engaging"
+                "numeric": 0,
+                "text": "not_engaging"
             },
             "is_correct": true
         },
         {
             "sample": 7,
+            "video_id": "e47da965aee26c70fdf0424e92298985",
             "predicted": {
                 "numeric": 1,
-                "text": "engaging"
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4354,
+                    "engaging": 0.5646
+                }
             },
             "actual": {
                 "numeric": 1,
@@ -98,57 +138,99 @@
         },
         {
             "sample": 8,
+            "video_id": "3faec2da92ea8b433ca47cd644fd4e78",
             "predicted": {
-                "numeric": 0,
-                "text": "not_engaging"
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4897,
+                    "engaging": 0.5103
+                }
             },
             "actual": {
-                "numeric": 0,
-                "text": "not_engaging"
+                "numeric": 1,
+                "text": "engaging"
             },
             "is_correct": true
         },
         {
             "sample": 9,
+            "video_id": "451065c099c077cf8b3fb2f1ea693591",
             "predicted": {
-                "numeric": 0,
-                "text": "not_engaging"
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4257,
+                    "engaging": 0.5743
+                }
             },
             "actual": {
-                "numeric": 0,
-                "text": "not_engaging"
+                "numeric": 1,
+                "text": "engaging"
             },
             "is_correct": true
         },
         {
             "sample": 10,
+            "video_id": "2b3db48de326b6935ecf434d003a2e52",
             "predicted": {
-                "numeric": 1,
-                "text": "engaging"
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5581,
+                    "engaging": 0.4419
+                }
             },
             "actual": {
                 "numeric": 0,
                 "text": "not_engaging"
             },
-            "is_correct": false
+            "is_correct": true
         },
         {
             "sample": 11,
+            "video_id": "00564657dabffe09b74c572d7965b353",
             "predicted": {
-                "numeric": 0,
-                "text": "not_engaging"
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.3877,
+                    "engaging": 0.6123
+                }
             },
             "actual": {
-                "numeric": 0,
-                "text": "not_engaging"
+                "numeric": 1,
+                "text": "engaging"
             },
             "is_correct": true
         },
         {
             "sample": 12,
+            "video_id": "0925330857cbffa879e0698ed11e0d82",
             "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4041,
+                    "engaging": 0.5959
+                }
+            },
+            "actual": {
                 "numeric": 0,
                 "text": "not_engaging"
+            },
+            "is_correct": false
+        },
+        {
+            "sample": 13,
+            "video_id": "3070d6d6ba4863df3deb789e907532f6",
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5394,
+                    "engaging": 0.4606
+                }
             },
             "actual": {
                 "numeric": 1,
@@ -157,58 +239,49 @@
             "is_correct": false
         },
         {
-            "sample": 13,
-            "predicted": {
-                "numeric": 0,
-                "text": "not_engaging"
-            },
-            "actual": {
-                "numeric": 0,
-                "text": "not_engaging"
-            },
-            "is_correct": true
-        },
-        {
             "sample": 14,
+            "video_id": "05af34e1f26c0f1dc662bf21600da88d",
             "predicted": {
-                "numeric": 0,
-                "text": "not_engaging"
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4121,
+                    "engaging": 0.5879
+                }
             },
             "actual": {
-                "numeric": 0,
-                "text": "not_engaging"
+                "numeric": 1,
+                "text": "engaging"
             },
             "is_correct": true
         },
         {
             "sample": 15,
+            "video_id": "09805e8d799a9378f2a17c6f68b4c9bb",
             "predicted": {
-                "numeric": 0,
-                "text": "not_engaging"
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4673,
+                    "engaging": 0.5327
+                }
             },
             "actual": {
                 "numeric": 1,
                 "text": "engaging"
             },
-            "is_correct": false
+            "is_correct": true
         },
         {
             "sample": 16,
+            "video_id": "14a2a71b182ac14f3224bdcb53e6d23d",
             "predicted": {
                 "numeric": 1,
-                "text": "engaging"
-            },
-            "actual": {
-                "numeric": 1,
-                "text": "engaging"
-            },
-            "is_correct": true
-        },
-        {
-            "sample": 17,
-            "predicted": {
-                "numeric": 1,
-                "text": "engaging"
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.3667,
+                    "engaging": 0.6333
+                }
             },
             "actual": {
                 "numeric": 0,
@@ -217,10 +290,15 @@
             "is_correct": false
         },
         {
-            "sample": 18,
+            "sample": 17,
+            "video_id": "140405d8da6688df31de05ddde9ca177",
             "predicted": {
                 "numeric": 0,
-                "text": "not_engaging"
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.6495,
+                    "engaging": 0.3505
+                }
             },
             "actual": {
                 "numeric": 0,
@@ -229,10 +307,32 @@
             "is_correct": true
         },
         {
-            "sample": 19,
+            "sample": 18,
+            "video_id": "0ff1fdf2fc4b7fa4e2f2e95e1ab24aaf",
             "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5821,
+                    "engaging": 0.4179
+                }
+            },
+            "actual": {
                 "numeric": 1,
                 "text": "engaging"
+            },
+            "is_correct": false
+        },
+        {
+            "sample": 19,
+            "video_id": "1572381cd73e87d46a952d72ff0538cb",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4903,
+                    "engaging": 0.5097
+                }
             },
             "actual": {
                 "numeric": 0,
@@ -242,33 +342,48 @@
         },
         {
             "sample": 20,
+            "video_id": "4efd064486b531bab7477b32f6f84058",
             "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5171,
+                    "engaging": 0.4829
+                }
+            },
+            "actual": {
                 "numeric": 0,
                 "text": "not_engaging"
             },
-            "actual": {
-                "numeric": 1,
-                "text": "engaging"
-            },
-            "is_correct": false
+            "is_correct": true
         },
         {
             "sample": 21,
+            "video_id": "5cdd27b0cc8ce8ca1f26de4132a94e6b",
             "predicted": {
-                "numeric": 1,
-                "text": "engaging"
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5048,
+                    "engaging": 0.4952
+                }
             },
             "actual": {
-                "numeric": 1,
-                "text": "engaging"
+                "numeric": 0,
+                "text": "not_engaging"
             },
             "is_correct": true
         },
         {
             "sample": 22,
+            "video_id": "49828bbcd1f867738b78d07c32555552",
             "predicted": {
                 "numeric": 0,
-                "text": "not_engaging"
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.6371,
+                    "engaging": 0.3629
+                }
             },
             "actual": {
                 "numeric": 0,
@@ -278,57 +393,31 @@
         },
         {
             "sample": 23,
+            "video_id": "0d60fcf90a8f0b92f49c960b8653eaf2",
             "predicted": {
-                "numeric": 0,
-                "text": "not_engaging"
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4384,
+                    "engaging": 0.5616
+                }
             },
             "actual": {
-                "numeric": 0,
-                "text": "not_engaging"
+                "numeric": 1,
+                "text": "engaging"
             },
             "is_correct": true
         },
         {
             "sample": 24,
+            "video_id": "17fbf1adc86163f277b36f971a8eec74",
             "predicted": {
                 "numeric": 1,
-                "text": "engaging"
-            },
-            "actual": {
-                "numeric": 1,
-                "text": "engaging"
-            },
-            "is_correct": true
-        },
-        {
-            "sample": 25,
-            "predicted": {
-                "numeric": 0,
-                "text": "not_engaging"
-            },
-            "actual": {
-                "numeric": 0,
-                "text": "not_engaging"
-            },
-            "is_correct": true
-        },
-        {
-            "sample": 26,
-            "predicted": {
-                "numeric": 0,
-                "text": "not_engaging"
-            },
-            "actual": {
-                "numeric": 0,
-                "text": "not_engaging"
-            },
-            "is_correct": true
-        },
-        {
-            "sample": 27,
-            "predicted": {
-                "numeric": 1,
-                "text": "engaging"
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.462,
+                    "engaging": 0.538
+                }
             },
             "actual": {
                 "numeric": 0,
@@ -337,10 +426,66 @@
             "is_correct": false
         },
         {
-            "sample": 28,
+            "sample": 25,
+            "video_id": "29b70c8d58edb030e1d2ee7231bd490d",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4373,
+                    "engaging": 0.5627
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 26,
+            "video_id": "3119b83cfdb63292ea078b6336d9109c",
             "predicted": {
                 "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5005,
+                    "engaging": 0.4995
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": false
+        },
+        {
+            "sample": 27,
+            "video_id": "d0525967385279b9f10d358aadfe33cd",
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5237,
+                    "engaging": 0.4763
+                }
+            },
+            "actual": {
+                "numeric": 0,
                 "text": "not_engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 28,
+            "video_id": "33213db91f7b1f92e8e1d2147d746012",
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5109,
+                    "engaging": 0.4891
+                }
             },
             "actual": {
                 "numeric": 0,
@@ -350,21 +495,31 @@
         },
         {
             "sample": 29,
+            "video_id": "0ccc15466956573a35e6fc2b9a439aec",
             "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5041,
+                    "engaging": 0.4959
+                }
+            },
+            "actual": {
                 "numeric": 0,
                 "text": "not_engaging"
             },
-            "actual": {
-                "numeric": 1,
-                "text": "engaging"
-            },
-            "is_correct": false
+            "is_correct": true
         },
         {
             "sample": 30,
+            "video_id": "102a43706eed251c530bf6733eee38db",
             "predicted": {
                 "numeric": 0,
-                "text": "not_engaging"
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5469,
+                    "engaging": 0.4531
+                }
             },
             "actual": {
                 "numeric": 0,
@@ -374,33 +529,48 @@
         },
         {
             "sample": 31,
+            "video_id": "eb81b1215afedbf8ad5c13f178cb9ddb",
             "predicted": {
-                "numeric": 0,
-                "text": "not_engaging"
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.3687,
+                    "engaging": 0.6313
+                }
             },
             "actual": {
-                "numeric": 0,
-                "text": "not_engaging"
+                "numeric": 1,
+                "text": "engaging"
             },
             "is_correct": true
         },
         {
             "sample": 32,
+            "video_id": "14cef79fee6e5d55c12c855025c0d144",
             "predicted": {
-                "numeric": 0,
-                "text": "not_engaging"
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.348,
+                    "engaging": 0.652
+                }
             },
             "actual": {
                 "numeric": 1,
                 "text": "engaging"
             },
-            "is_correct": false
+            "is_correct": true
         },
         {
             "sample": 33,
+            "video_id": "4fd4287fedf9782c236c8e4366044d1d",
             "predicted": {
                 "numeric": 1,
-                "text": "engaging"
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.3906,
+                    "engaging": 0.6094
+                }
             },
             "actual": {
                 "numeric": 1,
@@ -410,9 +580,14 @@
         },
         {
             "sample": 34,
+            "video_id": "0f48f5f288a78f4453d84b826a05ab37",
             "predicted": {
                 "numeric": 0,
-                "text": "not_engaging"
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5042,
+                    "engaging": 0.4958
+                }
             },
             "actual": {
                 "numeric": 0,
@@ -422,9 +597,14 @@
         },
         {
             "sample": 35,
+            "video_id": "012ad6e20354424ae834d84ce76ac799",
             "predicted": {
                 "numeric": 1,
-                "text": "engaging"
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.2805,
+                    "engaging": 0.7195
+                }
             },
             "actual": {
                 "numeric": 1,
@@ -434,9 +614,184 @@
         },
         {
             "sample": 36,
+            "video_id": "5aae86df24c6cc2a075d63a70ca20464",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4089,
+                    "engaging": 0.5911
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 37,
+            "video_id": "e7e1b9d39d25fc8519960bf59cdb5782",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4189,
+                    "engaging": 0.5811
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 38,
+            "video_id": "0fb6be7439c8d9cf9b1d4fff9c5287c8",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.3011,
+                    "engaging": 0.6989
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 39,
+            "video_id": "12a66e20322f6a9d6e236841e34cdc4c",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.3998,
+                    "engaging": 0.6002
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 40,
+            "video_id": "2edd7cc11cb2c1701da61d58c6ade4c6",
             "predicted": {
                 "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5277,
+                    "engaging": 0.4723
+                }
+            },
+            "actual": {
+                "numeric": 0,
                 "text": "not_engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 41,
+            "video_id": "02ab40563efa530b1ea22f48e1a1fc94",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4483,
+                    "engaging": 0.5517
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 42,
+            "video_id": "046625bf67efed9a45d25ad9e52dacfe",
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5353,
+                    "engaging": 0.4647
+                }
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 43,
+            "video_id": "1653ae4c58e209ae3eee5d93640507a2",
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5555,
+                    "engaging": 0.4445
+                }
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 44,
+            "video_id": "0761450b6dc0a0b08cf05927e369fa3d",
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5648,
+                    "engaging": 0.4352
+                }
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 45,
+            "video_id": "11f30fe8747260148531623ebf1ab61c",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.3188,
+                    "engaging": 0.6812
+                }
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": false
+        },
+        {
+            "sample": 46,
+            "video_id": "14316ac2ce2563a9a5c00110eb86c82e",
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.501,
+                    "engaging": 0.499
+                }
             },
             "actual": {
                 "numeric": 1,
@@ -445,57 +800,910 @@
             "is_correct": false
         },
         {
-            "sample": 37,
-            "predicted": {
-                "numeric": 0,
-                "text": "not_engaging"
-            },
-            "actual": {
-                "numeric": 0,
-                "text": "not_engaging"
-            },
-            "is_correct": true
-        },
-        {
-            "sample": 38,
-            "predicted": {
-                "numeric": 0,
-                "text": "not_engaging"
-            },
-            "actual": {
-                "numeric": 0,
-                "text": "not_engaging"
-            },
-            "is_correct": true
-        },
-        {
-            "sample": 39,
-            "predicted": {
-                "numeric": 0,
-                "text": "not_engaging"
-            },
-            "actual": {
-                "numeric": 0,
-                "text": "not_engaging"
-            },
-            "is_correct": true
-        },
-        {
-            "sample": 40,
+            "sample": 47,
+            "video_id": "88d98e814f885730dfb1e12cceba0e73",
             "predicted": {
                 "numeric": 1,
-                "text": "engaging"
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.423,
+                    "engaging": 0.577
+                }
             },
             "actual": {
                 "numeric": 1,
                 "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 48,
+            "video_id": "08ee193341af9750194f84c462bc2629",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4592,
+                    "engaging": 0.5408
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 49,
+            "video_id": "00b9a754872595b8518ffb7d21c0bf59",
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.533,
+                    "engaging": 0.467
+                }
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 50,
+            "video_id": "0cecf1ac88281f722ebb830d9260d275",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.407,
+                    "engaging": 0.593
+                }
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": false
+        },
+        {
+            "sample": 51,
+            "video_id": "2c86153289c5574bac6c6adea1d8511b",
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.518,
+                    "engaging": 0.482
+                }
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 52,
+            "video_id": "0ee43ffc5c60b9f1a52bcaff983484c8",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4297,
+                    "engaging": 0.5703
+                }
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": false
+        },
+        {
+            "sample": 53,
+            "video_id": "2e2c758afcc64c86a67b2ab4f0a13602",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4973,
+                    "engaging": 0.5027
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 54,
+            "video_id": "3377b67345ce93d305e01dd7f8befda5",
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5788,
+                    "engaging": 0.4212
+                }
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 55,
+            "video_id": "dfe13300cde4e3771d0208475399dd0a",
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5738,
+                    "engaging": 0.4262
+                }
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 56,
+            "video_id": "08f7cbcddb70a44df7b1c451825a4e7a",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.3851,
+                    "engaging": 0.6149
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 57,
+            "video_id": "25ee6417f172fb81832b157f8afd88b5",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.3883,
+                    "engaging": 0.6117
+                }
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": false
+        },
+        {
+            "sample": 58,
+            "video_id": "07e673b1205d67e5d508805aceca29f5",
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5112,
+                    "engaging": 0.4888
+                }
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 59,
+            "video_id": "56d79ca993e5de3bb179b1ce0e72d2fd",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4984,
+                    "engaging": 0.5016
+                }
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": false
+        },
+        {
+            "sample": 60,
+            "video_id": "16a35031e5a512eb15cd2feae77097b6",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4297,
+                    "engaging": 0.5703
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 61,
+            "video_id": "3f5c0cbf042d46b06be020774e682844",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4732,
+                    "engaging": 0.5268
+                }
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": false
+        },
+        {
+            "sample": 62,
+            "video_id": "363536ab5fc954187128473fb897fa7b",
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.6539,
+                    "engaging": 0.3461
+                }
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 63,
+            "video_id": "34d88aa1bcbf67396bf68c9264c48a5e",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4404,
+                    "engaging": 0.5596
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 64,
+            "video_id": "49477c71982a8be5326ee9fc91b56b2b",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.473,
+                    "engaging": 0.527
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 65,
+            "video_id": "583ef5d6ff5d01aa098f0ad62b5c9c93",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.3829,
+                    "engaging": 0.6171
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 66,
+            "video_id": "075d9bb9a76ebab2f1f85cb47a318160",
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5163,
+                    "engaging": 0.4837
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": false
+        },
+        {
+            "sample": 67,
+            "video_id": "5990db225472d5922eadb407d482d967",
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5059,
+                    "engaging": 0.4941
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": false
+        },
+        {
+            "sample": 68,
+            "video_id": "0d0058d69008d113c5596ec2a02efced",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4614,
+                    "engaging": 0.5386
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 69,
+            "video_id": "15d35bc0ef68580d3577dbd9442b92b6",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4308,
+                    "engaging": 0.5692
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 70,
+            "video_id": "28ee924da9dc85ab2633db332aba205d",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4694,
+                    "engaging": 0.5306
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 71,
+            "video_id": "2703b3b48679c118d04378ffa849d5f1",
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.6208,
+                    "engaging": 0.3792
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": false
+        },
+        {
+            "sample": 72,
+            "video_id": "3344a8251ad7ae7009e5df2d3baa58e5",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4271,
+                    "engaging": 0.5729
+                }
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": false
+        },
+        {
+            "sample": 73,
+            "video_id": "b27ff4913cb4ef2917c121d8a723d1cc",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4973,
+                    "engaging": 0.5027
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 74,
+            "video_id": "0c2f1965fb4d25ae399b933fe32c6b8e",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4558,
+                    "engaging": 0.5442
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 75,
+            "video_id": "19a9dd428c7847c406b57f77227cd3da",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.3801,
+                    "engaging": 0.6199
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 76,
+            "video_id": "4567fd3980948794b73e1726a4cf62bb",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4389,
+                    "engaging": 0.5611
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 77,
+            "video_id": "4456b307965039d37cf6d9a17c96b79d",
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5554,
+                    "engaging": 0.4446
+                }
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 78,
+            "video_id": "128e9d6bb579a32717e3a42926d57d6c",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4298,
+                    "engaging": 0.5702
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 79,
+            "video_id": "039bbc183c957604492f641e1cd09fbb",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.481,
+                    "engaging": 0.519
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 80,
+            "video_id": "11037ab7e13410b6c0385a94e48f6bf5",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4146,
+                    "engaging": 0.5854
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 81,
+            "video_id": "44d0758b1e1a32ce5a6a34a80136d9e5",
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5174,
+                    "engaging": 0.4826
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": false
+        },
+        {
+            "sample": 82,
+            "video_id": "2374ae046d2641dd56e425851e536fa8",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4995,
+                    "engaging": 0.5005
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 83,
+            "video_id": "024a447d126b4354175101887eb125e4",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.3387,
+                    "engaging": 0.6613
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 84,
+            "video_id": "0c18a50554df08677a40cdf150b271a3",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4242,
+                    "engaging": 0.5758
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 85,
+            "video_id": "0a03e8c472c7d87b10f34f74f7581920",
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.6758,
+                    "engaging": 0.3242
+                }
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 86,
+            "video_id": "1918d92d544670a8ba64ae904f936755",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.3904,
+                    "engaging": 0.6096
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 87,
+            "video_id": "a868b514b95c4ceaa62e14dfeff84f6d",
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5597,
+                    "engaging": 0.4403
+                }
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 88,
+            "video_id": "07269a31e259f611f097b80844b47f12",
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5476,
+                    "engaging": 0.4524
+                }
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 89,
+            "video_id": "bbfbdbb61347bedbaf24a1f6e6392928",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.307,
+                    "engaging": 0.693
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 90,
+            "video_id": "24d1057da501512c0c20542bbbd1714e",
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5256,
+                    "engaging": 0.4744
+                }
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 91,
+            "video_id": "1a0b74105162f99f8925fdfbee4dd740",
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.6469,
+                    "engaging": 0.3531
+                }
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 92,
+            "video_id": "2bce298f4a9f4b7f44cd40e9eb80e587",
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5291,
+                    "engaging": 0.4709
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": false
+        },
+        {
+            "sample": 93,
+            "video_id": "3dcfe5beaf51747954ba70b6b4587136",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4833,
+                    "engaging": 0.5167
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 94,
+            "video_id": "17e66ccc89e31bad92db44481f170add",
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.601,
+                    "engaging": 0.399
+                }
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 95,
+            "video_id": "4b7d8a26f102919322f91d20a863c7a4",
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5187,
+                    "engaging": 0.4813
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": false
+        },
+        {
+            "sample": 96,
+            "video_id": "16f0fec0273879983ebc70d81b7f9b5e",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4033,
+                    "engaging": 0.5967
+                }
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
+            },
+            "is_correct": false
+        },
+        {
+            "sample": 97,
+            "video_id": "188b348fd30b21bd0ee9d380dc7f742e",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4975,
+                    "engaging": 0.5025
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 98,
+            "video_id": "06d16eefb695787786f7b9256ee6e152",
+            "predicted": {
+                "numeric": 1,
+                "text": "engaging",
+                "probabilities": {
+                    "not_engaging": 0.4544,
+                    "engaging": 0.5456
+                }
+            },
+            "actual": {
+                "numeric": 1,
+                "text": "engaging"
+            },
+            "is_correct": true
+        },
+        {
+            "sample": 99,
+            "video_id": "2613f6a96a08f02083f323e9d82adaee",
+            "predicted": {
+                "numeric": 0,
+                "text": "not_engaging",
+                "probabilities": {
+                    "not_engaging": 0.5029,
+                    "engaging": 0.4971
+                }
+            },
+            "actual": {
+                "numeric": 0,
+                "text": "not_engaging"
             },
             "is_correct": true
         }
     ],
     "summary": {
-        "accuracy": 0.7317073170731707,
-        "correct_count": 30,
-        "total_samples": 41
+        "accuracy": 0.75,
+        "correct_count": 75,
+        "total_samples": 100
     }
 }

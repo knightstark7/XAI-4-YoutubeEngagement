@@ -1,13 +1,13 @@
 {
     "summary": {
-        "accuracy": 0.8333333134651184,
+        "accuracy": 0.6232876777648926,
         "not_engaging_count": {
-            "actual": 8,
-            "predicted": 6
+            "actual": 62,
+            "predicted": 51
         },
         "engaging_count": {
-            "actual": 4,
-            "predicted": 6
+            "actual": 84,
+            "predicted": 95
         }
     }
 }

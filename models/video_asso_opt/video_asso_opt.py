@@ -125,7 +125,7 @@ class VideoAssoConcept(pl.LightningModule):
         
         return sim
     
-    def save_predictions(self, phase, pred_labels, actual_labels, limit=100):
+    def save_predictions(self, phase, pred_labels, actual_labels, video_ids=None, pred_probs=None, limit=100):
         """
         Save predictions and actual labels to a formatted CSV file for easy viewing
         
@@ -133,6 +133,8 @@ class VideoAssoConcept(pl.LightningModule):
             phase: Training phase (train, val, test)
             pred_labels: Predicted labels
             actual_labels: Actual labels
+            video_ids: List of video IDs for each sample
+            pred_probs: Prediction probabilities for each sample
             limit: Maximum number of samples to save
         """
         if not hasattr(self.cfg, 'output_dir'):
@@ -153,13 +155,35 @@ class VideoAssoConcept(pl.LightningModule):
             pred_text = "engaging" if pred == 1 else "not_engaging"
             actual_text = "engaging" if actual == 1 else "not_engaging"
             
+            # Get video ID if available
+            video_id = video_ids[i] if video_ids is not None else f"sample_{i}"
+            
+            # Get prediction probabilities if available
+            if pred_probs is not None:
+                probs = pred_probs[i]
+                not_engaging_prob = probs[0].item() if isinstance(probs[0], torch.Tensor) else probs[0]
+                engaging_prob = probs[1].item() if isinstance(probs[1], torch.Tensor) else probs[1]
+            else:
+                not_engaging_prob = 1.0 if pred == 0 else 0.0
+                engaging_prob = 1.0 if pred == 1 else 0.0
+            
             # Check if prediction is correct
             is_correct = pred == actual
             
-            data.append([i, pred, pred_text, actual, actual_text, is_correct])
+            data.append([
+                i, 
+                video_id,
+                pred, 
+                pred_text, 
+                actual, 
+                actual_text, 
+                f"{not_engaging_prob:.4f}", 
+                f"{engaging_prob:.4f}",
+                is_correct
+            ])
         
         # Calculate accuracy
-        correct_count = sum(1 for _, _, _, _, _, is_correct in data if is_correct)
+        correct_count = sum(1 for _, _, _, _, _, _, _, _, is_correct in data if is_correct)
         accuracy = correct_count / num_samples if num_samples > 0 else 0
         
         # Save to CSV
@@ -168,8 +192,17 @@ class VideoAssoConcept(pl.LightningModule):
         
         with open(output_path, 'w', newline='') as csvfile:
             writer = csv.writer(csvfile)
-            writer.writerow(['Sample', 'Predicted (Numeric)', 'Predicted (Text)', 
-                             'Actual (Numeric)', 'Actual (Text)', 'Is Correct'])
+            writer.writerow([
+                'Sample', 
+                'Video ID',
+                'Predicted (Numeric)', 
+                'Predicted (Text)', 
+                'Actual (Numeric)', 
+                'Actual (Text)',
+                'Not Engaging Prob',
+                'Engaging Prob',
+                'Is Correct'
+            ])
             
             for row in data:
                 writer.writerow(row)
@@ -183,11 +216,23 @@ class VideoAssoConcept(pl.LightningModule):
         
         # Save as formatted JSON for additional use
         json_data = {
-            "predictions": [{"sample": i, 
-                           "predicted": {"numeric": p[1], "text": p[2]}, 
-                           "actual": {"numeric": p[3], "text": p[4]}, 
-                           "is_correct": p[5]} 
-                           for i, p in enumerate(data)],
+            "predictions": [{
+                "sample": i, 
+                "video_id": p[1],
+                "predicted": {
+                    "numeric": p[2], 
+                    "text": p[3],
+                    "probabilities": {
+                        "not_engaging": float(p[6]),
+                        "engaging": float(p[7])
+                    }
+                }, 
+                "actual": {
+                    "numeric": p[4], 
+                    "text": p[5]
+                }, 
+                "is_correct": p[8]
+            } for i, p in enumerate(data)],
             "summary": {
                 "accuracy": accuracy,
                 "correct_count": correct_count,
@@ -198,23 +243,31 @@ class VideoAssoConcept(pl.LightningModule):
         json_path = os.path.join(self.cfg.output_dir, f"{phase}_predictions.json")
         with open(json_path, 'w') as f:
             json.dump(json_data, f, indent=4)
+            
+        print(f"{phase.capitalize()} predictions saved to {json_path}")
     
     def training_step(self, train_batch, batch_idx):
         """
         Training step
         
         Args:
-            train_batch: Batch of training data
+            train_batch: Batch of training data (content_embed, label, video_id)
             batch_idx: Batch index
             
         Returns:
             loss: Training loss
         """
-        content_embed, label = train_batch
+        content_embed, label, video_ids_batch = train_batch # Unpack video IDs
         
         # Forward pass
         sim = self.forward(content_embed)
-        pred = 100 * sim  # Scaling as in standard CLIP
+        pred = sim # Scaling as in standard CLIP
+        
+        
+        # Get prediction probabilities
+        pred_probs = F.softmax(pred, dim=1)
+        
+        pred = pred * 100
         
         # Classification loss
         cls_loss = F.cross_entropy(pred, label)
@@ -232,9 +285,13 @@ class VideoAssoConcept(pl.LightningModule):
         if not hasattr(self, 'train_pred_labels'):
             self.train_pred_labels = []
             self.train_actual_labels = []
+            self.train_pred_probs = []
+            self.train_video_ids = [] # Initialize list for video IDs
         
         self.train_pred_labels.append(pred_labels.detach().cpu())
         self.train_actual_labels.append(label.detach().cpu())
+        self.train_pred_probs.append(pred_probs.detach().cpu())
+        self.train_video_ids.extend(video_ids_batch) # Store video IDs from batch
         
         # Log metrics cho mỗi batch - không log predicted và actual labels
         self.log('train_loss_step', cls_loss, on_step=True, on_epoch=True, prog_bar=True)
@@ -271,30 +328,39 @@ class VideoAssoConcept(pl.LightningModule):
         if hasattr(self, 'train_pred_labels') and len(self.train_pred_labels) > 0:
             all_pred = torch.cat(self.train_pred_labels)
             all_actual = torch.cat(self.train_actual_labels)
+            all_probs = torch.cat(self.train_pred_probs)
+            all_video_ids = self.train_video_ids # Get collected video IDs
             
             # Lưu vào file để dễ theo dõi
-            self.save_predictions('train', all_pred, all_actual)
+            self.save_predictions('train', all_pred, all_actual, video_ids=all_video_ids, pred_probs=all_probs)
             
             # Reset cho epoch tiếp theo
             self.train_pred_labels = []
             self.train_actual_labels = []
+            self.train_pred_probs = []
+            self.train_video_ids = [] # Reset video IDs list
     
     def validation_step(self, batch, batch_idx):
         """
         Validation step
         
         Args:
-            batch: Batch of validation data
+            batch: Batch of validation data (content_embed, label, video_id)
             batch_idx: Batch index
             
         Returns:
             loss: Validation loss
         """
-        content_embed, label = batch
+        content_embed, label, video_ids_batch = batch # Unpack video IDs
         
         # Forward pass
         sim = self.forward(content_embed)
-        pred = 100 * sim
+        pred = sim
+        
+        # Get prediction probabilities
+        pred_probs = F.softmax(pred, dim=1)
+        
+        pred = pred * 100
         
         # Get predicted labels
         pred_labels = torch.argmax(pred, dim=1)
@@ -303,9 +369,13 @@ class VideoAssoConcept(pl.LightningModule):
         if not hasattr(self, 'val_pred_labels'):
             self.val_pred_labels = []
             self.val_actual_labels = []
+            self.val_pred_probs = []
+            self.val_video_ids = [] # Initialize list for video IDs
         
         self.val_pred_labels.append(pred_labels.detach().cpu())
         self.val_actual_labels.append(label.detach().cpu())
+        self.val_pred_probs.append(pred_probs.detach().cpu())
+        self.val_video_ids.extend(video_ids_batch) # Store video IDs from batch
         
         # Compute loss
         loss = F.cross_entropy(pred, label)
@@ -325,30 +395,39 @@ class VideoAssoConcept(pl.LightningModule):
         if hasattr(self, 'val_pred_labels') and len(self.val_pred_labels) > 0:
             all_pred = torch.cat(self.val_pred_labels)
             all_actual = torch.cat(self.val_actual_labels)
+            all_probs = torch.cat(self.val_pred_probs)
+            all_video_ids = self.val_video_ids # Get collected video IDs
             
             # Lưu vào file để dễ theo dõi
-            self.save_predictions('val', all_pred, all_actual)
+            self.save_predictions('val', all_pred, all_actual, video_ids=all_video_ids, pred_probs=all_probs)
             
             # Reset cho epoch tiếp theo
             self.val_pred_labels = []
             self.val_actual_labels = []
+            self.val_pred_probs = []
+            self.val_video_ids = [] # Reset video IDs list
     
     def test_step(self, batch, batch_idx):
         """
         Test step
         
         Args:
-            batch: Batch of test data
+            batch: Batch of test data (content_embed, label, video_id)
             batch_idx: Batch index
             
         Returns:
             loss: Test loss
         """
-        content_embed, label = batch
+        content_embed, label, video_ids_batch = batch # Unpack video IDs
         
         # Forward pass
         sim = self.forward(content_embed)
-        pred = 100 * sim
+        pred = sim
+        
+        # Get prediction probabilities
+        pred_probs = F.softmax(pred, dim=1)
+        
+        pred = pred * 100
         
         # Get predicted labels
         pred_labels = torch.argmax(pred, dim=1)
@@ -362,6 +441,12 @@ class VideoAssoConcept(pl.LightningModule):
         # Store predictions and labels for later analysis
         self.all_y.append(label)
         self.all_pred.append(pred_labels)
+        if not hasattr(self, 'all_probs'):
+            self.all_probs = []
+        self.all_probs.append(pred_probs)
+        if not hasattr(self, 'all_video_ids'): # Initialize list for video IDs if needed
+            self.all_video_ids = []
+        self.all_video_ids.extend(video_ids_batch) # Store video IDs from batch
         
         return {"loss": loss}
     
@@ -372,12 +457,14 @@ class VideoAssoConcept(pl.LightningModule):
         # Concatenate all predictions and labels
         all_y = torch.cat(self.all_y)
         all_pred = torch.cat(self.all_pred)
+        all_probs = torch.cat(self.all_probs)
+        all_video_ids = self.all_video_ids # Get collected video IDs
         
         # Compute total accuracy
         self.total_test_acc = self.test_acc.compute()
         
         # Lưu kết quả dự đoán vào file CSV và JSON dễ đọc
-        self.save_predictions('test', all_pred, all_y, limit=len(all_pred))
+        self.save_predictions('test', all_pred, all_y, video_ids=all_video_ids, pred_probs=all_probs, limit=len(all_pred))
         
         # Thay vì log string, chúng ta sẽ log số lượng nhãn mỗi loại
         if hasattr(self.cfg, 'output_dir'):
@@ -436,6 +523,8 @@ class VideoAssoConcept(pl.LightningModule):
         # Clear stored data
         self.all_y = []
         self.all_pred = []
+        self.all_probs = []
+        self.all_video_ids = [] # Reset video IDs list
     
     def plot_confusion_matrix(self, cm, class_names, output_dir):
         """

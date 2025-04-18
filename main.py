@@ -8,6 +8,8 @@ import json
 from pathlib import Path
 
 from models.video_asso_opt.video_asso_opt import VideoAssoConcept, VideoAssoConceptFast
+# Import mô hình cải tiến
+from models.video_asso_opt.video_asso_concept_enhanced import VideoAssoConceptEnhanced, VideoAssoConceptFastEnhanced
 from models.select_concept.select_video_concepts import (
     mi_select, 
     sim_score_select, 
@@ -58,6 +60,18 @@ def video_asso_opt_main(cfg):
     # Get the concept selection function
     concept_select_fn = setup_concept_select_fn(cfg)
     
+    # Load video data if enhanced initialization is used
+    video_data = None
+    if hasattr(cfg, 'weight_init_method') and cfg.weight_init_method in ['llm', 'continuous']:
+        print(f"Loading video data for enhanced initialization with method: {cfg.weight_init_method}")
+        try:
+            with open(cfg.video_results_path, 'r', encoding='utf-8') as f:
+                video_data = json.load(f)
+            print(f"Loaded {len(video_data)} videos from {cfg.video_results_path}")
+        except Exception as e:
+            print(f"Warning: Could not load video data for enhanced initialization: {e}")
+            print("Falling back to default initialization")
+    
     # Create the data module
     if cfg.use_dot_product:
         print("Using dot product data module (faster)")
@@ -101,11 +115,21 @@ def video_asso_opt_main(cfg):
         ckpt_path = cfg.ckpt_path
         print(f'Loading checkpoint: {ckpt_path}')
         
+        # Determine model class from checkpoint or configuration
+        model_class = getattr(cfg, 'model_class', 'video_asso_concept')
+        print(f"Using model class: {model_class}")
+        
         # Load the appropriate model
-        if cfg.use_dot_product:
-            model = VideoAssoConceptFast.load_from_checkpoint(ckpt_path)
-        else:
-            model = VideoAssoConcept.load_from_checkpoint(ckpt_path)
+        if model_class == 'video_asso_concept_enhanced':
+            if cfg.use_dot_product:
+                model = VideoAssoConceptFastEnhanced.load_from_checkpoint(ckpt_path)
+            else:
+                model = VideoAssoConceptEnhanced.load_from_checkpoint(ckpt_path)
+        else:  # Default to original model
+            if cfg.use_dot_product:
+                model = VideoAssoConceptFast.load_from_checkpoint(ckpt_path)
+            else:
+                model = VideoAssoConcept.load_from_checkpoint(ckpt_path)
         
         # Set up the trainer
         trainer = pl.Trainer(
@@ -147,13 +171,25 @@ def video_asso_opt_main(cfg):
         
         return
 
+    # Determine model class from configuration
+    model_class = getattr(cfg, 'model_class', 'video_asso_concept')
+    print(f"Using model class: {model_class}")
+    
     # Create the model
-    if cfg.use_dot_product:
-        print("Using VideoAssoConceptFast model")
-        model = VideoAssoConceptFast(cfg)
-    else:
-        print("Using VideoAssoConcept model")
-        model = VideoAssoConcept(cfg)
+    if model_class == 'video_asso_concept_enhanced':
+        if cfg.use_dot_product:
+            print("Using VideoAssoConceptFastEnhanced model with enhanced initialization")
+            model = VideoAssoConceptFastEnhanced(cfg, video_data=video_data)
+        else:
+            print("Using VideoAssoConceptEnhanced model with enhanced initialization")
+            model = VideoAssoConceptEnhanced(cfg, video_data=video_data)
+    else:  # Default to original model
+        if cfg.use_dot_product:
+            print("Using VideoAssoConceptFast model")
+            model = VideoAssoConceptFast(cfg)
+        else:
+            print("Using VideoAssoConcept model")
+            model = VideoAssoConcept(cfg)
     
     # Set up callbacks
     checkpoint_callback = pl.callbacks.ModelCheckpoint(
