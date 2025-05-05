@@ -1,0 +1,27 @@
+#define constants
+ROOT_FOLDER = '/mnt/d/Thesis/Prep/SnapUGC/'
+DATA_SAMPLE_DIR = ROOT_FOLDER + 'data_sample/'
+EMBEDDED_DATA_DIR = ROOT_FOLDER + 'embedding/'
+TRAIN_EMBED_PATH = DATA_SAMPLE_DIR+'snapugc_embedding_train.pt'
+VAL_EMBED_PATH = DATA_SAMPLE_DIR+'snapugc_embedding_val.pt'
+TEST_EMBED_PATH = DATA_SAMPLE_DIR+'snapugc_embedding_test.pt'
+SNAPUGC_PATH = DATA_SAMPLE_DIR + 'final_snapugc.parquet'
+
+embedded_snapugc_path = EMBEDDED_DATA_DIR + 'snapugc_embedding_final.parquet'
+
+SELECT_LABEL = 'label_2'
+SAVING_FOLDER = 'sub_sample'
+VERSION_MODEL = 'model_main'
+CHECKPOINT_DIR = f'{ROOT_FOLDER}checkpoints/{VERSION_MODEL}/{SELECT_LABEL}/{SAVING_FOLDER}'
+LOG_DIR = f'{ROOT_FOLDER}logs/{VERSION_MODEL}/{SELECT_LABEL}/{SAVING_FOLDER}'
+
+PATIENCE = 10
+BATCH_SIZE = 32
+NUM_EPOCH = 30
+
+INPUT_SAME = 512
+INPUT_TEXT = 768
+INPUT_THUMBNAIL = 2560
+INPUT_VIDEO = 2304*2*2
+INPUT_AUDIO = 62*128
+INPUT_SUM = INPUT_TEXT*2+INPUT_THUMBNAIL+INPUT_VIDEO+INPUT_AUDIO
